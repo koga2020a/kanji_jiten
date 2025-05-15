@@ -190,7 +190,17 @@
       // すべての漢字データをチェック
       for (const item of kanjiDatabase) {
         // 入力された読み仮名が、その漢字のいずれかの読み仮名と一致するかチェック
-        if (item.readings.some(reading => reading === key)) {
+        // ひらがなとカタカナの両方に対応
+        if (item.readings.some(reading => {
+          // ひらがなに変換して比較
+          const normalizedReading = reading.replace(/[\u30A1-\u30F6]/g, function(match) {
+            return String.fromCharCode(match.charCodeAt(0) - 0x60);
+          });
+          const normalizedKey = key.replace(/[\u30A1-\u30F6]/g, function(match) {
+            return String.fromCharCode(match.charCodeAt(0) - 0x60);
+          });
+          return normalizedReading === normalizedKey;
+        })) {
           data.push(item);
         }
       }

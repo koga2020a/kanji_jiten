@@ -34,5 +34,140 @@
     "radical": "穴",
     "component": "工",
     "example": "ペットボトルが**カラ**になった。／青い**ソラ**が広がっている。"
+  },
+  {
+    "explanation": "庭に咲く植物のうち、花弁を持つものの総称です。",
+    "correct": "花",
+    "readings": ["はな", "カ"],
+    "options": ["花", "草", "華", "花火"],
+    "radical": "艸",
+    "component": "化",
+    "example": "庭に**ハナ**が咲いている。"
+  },
+  {
+    "explanation": "地面に生える緑色の植物のことです。",
+    "correct": "草",
+    "readings": ["くさ", "ソウ"],
+    "options": ["草", "花", "葉", "森"],
+    "radical": "艸",
+    "component": "早",
+    "example": "野原に**クサ**がいっぱい生えている。"
+  },
+  {
+    "explanation": "小さな昆虫や虫類などの総称です。",
+    "correct": "虫",
+    "readings": ["むし"],
+    "options": ["虫", "鳥", "魚", "蚊"],
+    "radical": "虫",
+    "component": "",
+    "example": "**ムシ**を捕まえて虫かごに入れた。"
+  },
+  {
+    "explanation": "水中に生きる、鰭を持つ生物のことです。",
+    "correct": "魚",
+    "readings": ["さかな", "うお"],
+    "options": ["魚", "鳥", "肉", "貝"],
+    "radical": "魚",
+    "component": "",
+    "example": "川で**サカナ**を釣った。"
+  },
+  {
+    "explanation": "地面から高くそびえる山岳地帯のことです。",
+    "correct": "山",
+    "readings": ["やま", "サン"],
+    "options": ["山", "川", "丘", "峰"],
+    "radical": "山",
+    "component": "",
+    "example": "あの**ヤマ**はとても高い。"
+  },
+  {
+    "explanation": "地表を流れる細長い水の流れのことです。",
+    "correct": "川",
+    "readings": ["かわ", "セン"],
+    "options": ["川", "湖", "海", "渓"],
+    "radical": "川",
+    "component": "",
+    "example": "夏休みに家族で**カワ**へ行った。"
+  },
+  {
+    "explanation": "空に浮かぶ水滴の集まりで、形が変わりやすいものです。",
+    "correct": "雲",
+    "readings": ["くも"],
+    "options": ["雲", "雨", "霧", "霞"],
+    "radical": "雨",
+    "component": "云",
+    "example": "今日は空に**クモ**がかかっている。"
+  },
+  {
+    "explanation": "空から降ってくる白い結晶のことです。",
+    "correct": "雪",
+    "readings": ["ゆき"],
+    "options": ["雪", "氷", "霜", "雨"],
+    "radical": "雨",
+    "component": "彗",
+    "example": "冬になると山に**ユキ**が積もる。"
+  },
+  {
+    "explanation": "夜の空に見える地球の衛星です。",
+    "correct": "月",
+    "readings": ["つき", "ゲツ"],
+    "options": ["月", "星", "朋", "明"],
+    "radical": "月",
+    "component": "",
+    "example": "満**ツキ**の夜は空が明るい。"
+  },
+  {
+    "explanation": "燃えている炎や火種のことです。",
+    "correct": "火",
+    "readings": ["ひ", "カ"],
+    "options": ["火", "灯", "炎", "光"],
+    "radical": "火",
+    "component": "",
+    "example": "キャンプで**ヒ**を起こした。"
+  },
+  {
+    "explanation": "液体で、飲んだり洗ったりするものです。",
+    "correct": "水",
+    "readings": ["みず", "スイ"],
+    "options": ["水", "氷", "油", "酒"],
+    "radical": "水",
+    "component": "",
+    "example": "のどがかわいたら**ミズ**を飲む。"
+  },
+  {
+    "explanation": "植物の幹や枝をつくる材料になるものです。",
+    "correct": "木",
+    "readings": ["き", "モク"],
+    "options": ["木", "林", "本", "束"],
+    "radical": "木",
+    "component": "",
+    "example": "庭に大きな**キ**がある。"
+  },
+  {
+    "explanation": "金属の一種で、貨幣や装飾に使われます。",
+    "correct": "金",
+    "readings": ["かね", "キン"],
+    "options": ["金", "銀", "銅", "鉄"],
+    "radical": "金",
+    "component": "",
+    "example": "おじいちゃんから**カネ**をもらった。"
+  },
+  {
+    "explanation": "地面や大地の成分となるものです。",
+    "correct": "土",
+    "readings": ["つち", "ド"],
+    "options": ["土", "地", "砂", "泥"],
+    "radical": "土",
+    "component": "",
+    "example": "花を**ツチ**に植えた。"
+  },
+  {
+    "explanation": "太陽を指すことや一日を表す文字です。",
+    "correct": "日",
+    "readings": ["ひ", "ニチ"],
+    "options": ["日", "明", "旧", "旦"],
+    "radical": "日",
+    "component": "",
+    "example": "朝、**ヒ**が昇る。"
   }
 ]
