@@ -26,6 +26,14 @@
     .options p { margin-bottom: 4px; font-weight: bold; }
     .options button { width: 48px; height: 48px; margin-right: 4px; font-size: 20px; background: #e2e8f0; border: none; border-radius: 4px; cursor: pointer; }
     .options button:hover { background: #bee3f8; }
+    .options button.correct {
+      background: #c6f6d5;
+      color: #2f855a;
+    }
+    .options button.wrong {
+      background: #fed7d7;
+      color: #c53030;
+    }
     .result { padding: 12px; border-radius: 4px; text-align: center; margin-top: 16px; }
     .correct { background: #c6f6d5; color: #2f855a; }
     .wrong { background: #fed7d7; color: #c53030; }
@@ -183,7 +191,9 @@
           'data/kanji_data_001.json',
           'data/grade5_part1_1-40.json',
           'data/grade5_part2_41-80.json',
-          'data/grade5_part3_81-120.json'
+          'data/grade5_part3_81-120.json',
+          'data/grade5_part4_121-160.json',
+          'data/grade5_part5_161-185.json'
         ];
 
         // 各JSONファイルを読み込む
@@ -304,10 +314,15 @@
     function chooseKanji(kanji) {
       if (selectedIndex !== null) {
         const correctChar = data[selectedIndex].correct;
-        resultDiv.innerHTML = correctChar === kanji
-          ? '<p><strong>正解!</strong></p>'
-          : '<p><strong>不正解</strong></p>';
-        resultDiv.className = 'result ' + (correctChar === kanji ? 'correct' : 'wrong');
+        const buttons = document.querySelectorAll('.options button');
+        buttons.forEach(button => {
+          if (button.textContent === kanji) {
+            button.classList.add(kanji === correctChar ? 'correct' : 'wrong');
+          }
+          if (button.textContent === correctChar) {
+            button.classList.add('correct');
+          }
+        });
       }
     }
 
@@ -367,7 +382,12 @@
       }
 
       const currentKanji = quizQuestions[currentQuizIndex];
-      quizQuestion.textContent = currentKanji.explanation;
+      // 問題文に正解の漢字が含まれる場合は伏字に置換
+      let explanation = currentKanji.explanation;
+      if (explanation.includes(currentKanji.correct)) {
+        explanation = explanation.replace(currentKanji.correct, '□');
+      }
+      quizQuestion.textContent = explanation;
       
       // 詳細情報を表示
       const infoDiv = document.createElement('div');
@@ -396,7 +416,21 @@
       // 例文の表示
       if (currentKanji.example) {
         const exampleP = document.createElement('p');
-        exampleP.innerHTML = `例文: ${formatExample(currentKanji.example, currentKanji.correct)}`;
+        // 例文の中の正解の漢字も伏字に置換
+        let example = currentKanji.example;
+        if (example.includes(currentKanji.correct)) {
+          example = example.replace(currentKanji.correct, '□');
+        }
+        // militaryExampleがある場合は先に表示
+        if (currentKanji.militaryExample) {
+          let militaryExample = currentKanji.militaryExample;
+          if (militaryExample.includes(currentKanji.correct)) {
+            militaryExample = militaryExample.replace(currentKanji.correct, '□');
+          }
+          exampleP.innerHTML = `軍事例文: ${formatExample(militaryExample, currentKanji.correct)}<br>例文: ${formatExample(example, currentKanji.correct)}`;
+        } else {
+          exampleP.innerHTML = `例文: ${formatExample(example, currentKanji.correct)}`;
+        }
         infoDiv.appendChild(exampleP);
       }
       

@@ -14,7 +14,8 @@
     ],
     "radical": "宀",
     "component": "畐",
-    "example": "人々の**トミ**を分かち合う。"
+    "example": "人々の**トミ**を分かち合う。",
+    "militaryExample": "戦時中の資源**トミ**国が勝敗を左右する。"
   },
   {
     "explanation": "戦いや武道などに関することです。",
@@ -31,7 +32,8 @@
     ],
     "radical": "止",
     "component": "弋",
-    "example": "剣道の**ブ**道を習う。"
+    "example": "剣道の**ブ**道を習う。",
+    "militaryExample": "**ブ**器の開発競争が激化している。"
   },
   {
     "explanation": "もとに戻ることです。",
@@ -48,7 +50,8 @@
     ],
     "radical": "彳",
     "component": "复",
-    "example": "町を**フク**興する。"
+    "example": "町を**フク**興する。",
+    "militaryExample": "敗戦後、軍事力の**フク**活を目指す。"
   },
   {
     "explanation": "同じものが重なっていることです。",
@@ -65,7 +68,8 @@
     ],
     "radical": "衣",
     "component": "畐",
-    "example": "問題を**フク**数して考える。"
+    "example": "問題を**フク**数して考える。",
+    "militaryExample": "**フク**数の戦線で同時に攻撃を仕掛ける。"
   },
   {
     "explanation": "お寺の神さまや仏教に関することです。",
@@ -82,7 +86,8 @@
     ],
     "radical": "亻",
     "component": "弗",
-    "example": "寺の**ホトケ**に手を合わせる。"
+    "example": "寺の**ホトケ**に手を合わせる。",
+    "militaryExample": "戦争で亡くなった兵士の**ホトケ**に手を合わせる。"
   },
   {
     "explanation": "いくつかをつないで作ることです。",
@@ -99,7 +104,8 @@
     ],
     "radical": "糸",
     "component": "扁",
-    "example": "冬にマフラーを**アム**。"
+    "example": "冬にマフラーを**アム**。",
+    "militaryExample": "第三**ヘン**隊が前線に配備された。"
   },
   {
     "explanation": "話したり説明したりすることです。",
@@ -116,7 +122,8 @@
     ],
     "radical": "辛",
     "component": "",
-    "example": "駅前で**ベン**当を買う。"
+    "example": "駅前で**ベン**当を買う。",
+    "militaryExample": "司令官が作戦について**ベン**明した。"
   },
   {
     "explanation": "守ったり大切にしたりすることです。",
@@ -133,7 +140,8 @@
     ],
     "radical": "亻",
     "component": "呆",
-    "example": "約束を**タモツ**。"
+    "example": "約束を**タモツ**。",
+    "militaryExample": "国境の安全を**タモ**つために軍を配備する。"
   },
   {
     "explanation": "人の死を記念して作る石などのことです。",
@@ -150,7 +158,8 @@
     ],
     "radical": "土",
     "component": "莫",
-    "example": "おじいちゃんの**ハカ**参りをする。"
+    "example": "おじいちゃんの**ハカ**参りをする。",
+    "militaryExample": "無名戦士の**ハカ**に献花する。"
   },
   {
     "explanation": "知らせることや知らせです。",
@@ -167,7 +176,8 @@
     ],
     "radical": "土",
     "component": "幸",
-    "example": "努力が**ムク**われる。"
+    "example": "努力が**ムク**われる。",
+    "militaryExample": "敵の動きを本部に**ホウ**告する。"
   },
   {
     "explanation": "たくさんあってゆたかなことです。",
@@ -184,7 +194,8 @@
     ],
     "radical": "豆",
     "component": "曲",
-    "example": "**ユタカ**な自然を楽しむ。"
+    "example": "**ユタカ**な自然を楽しむ。",
+    "militaryExample": "**ホウ**富な軍事経験を持つ将軍。"
   },
   {
     "explanation": "あぶないことをふせぐことです。",
@@ -201,7 +212,8 @@
     ],
     "radical": "阝",
     "component": "方",
-    "example": "台風を**フセ**ぐために準備する。"
+    "example": "台風を**フセ**ぐために準備する。",
+    "militaryExample": "ミサイル**ボウ**衛システムを配備する。"
   },
   {
     "explanation": "国と国とで物をやりとりすることです。",
@@ -217,7 +229,8 @@
     ],
     "radical": "貝",
     "component": "冒",
-    "example": "日本と外国が物を**ボウ**易する。"
+    "example": "日本と外国が物を**ボウ**易する。",
+    "militaryExample": "武器の**ボウ**易を国際条約で規制する。"
   },
   {
     "explanation": "おさえられずに荒っぽくあらわれることです。",
@@ -235,7 +248,8 @@
     ],
     "radical": "日",
     "component": "共",
-    "example": "子どもが**アバ**れる。"
+    "example": "子どもが**アバ**れる。",
+    "militaryExample": "敵軍の**ボウ**力的な侵攻を阻止する。"
   },
   {
     "explanation": "つとめとして行うことです。",
@@ -252,7 +266,8 @@
     ],
     "radical": "力",
     "component": "無",
-    "example": "学校で係の仕事を**ツト**める。"
+    "example": "学校で係の仕事を**ツト**める。",
+    "militaryExample": "防衛**ム**省の指示に従って行動する。"
   },
   {
     "explanation": "眠っているときに見る不思議な世界のことです。",
@@ -269,7 +284,8 @@
     ],
     "radical": "艹",
     "component": "冖夕",
-    "example": "昨日見た**ユメ**を覚えている。"
+    "example": "昨日見た**ユメ**を覚えている。",
+    "militaryExample": "平和な世界を**ユメ**見る兵士たち。"
   },
   {
     "explanation": "どうしたらいいか、わからなくなることです。",
@@ -286,7 +302,8 @@
     ],
     "radical": "辶",
     "component": "米",
-    "example": "道に**マヨ**ってしまった。"
+    "example": "道に**マヨ**ってしまった。",
+    "militaryExample": "戦場で方向に**マヨ**った部隊を救出する。"
   },
   {
     "explanation": "木からとれるふわふわした白い部分です。",
@@ -303,7 +320,8 @@
     ],
     "radical": "糸",
     "component": "帛",
-    "example": "クッションに**ワタ**を詰める。"
+    "example": "クッションに**ワタ**を詰める。",
+    "militaryExample": "弾丸の貫通を防ぐ**ワタ**入りの防弾チョッキ。"
   },
   {
     "explanation": "物を遠いところへはこぶことです。",
@@ -319,7 +337,8 @@
     ],
     "radical": "車",
     "component": "兪",
-    "example": "野菜を他国に**ユ**出する。"
+    "example": "野菜を他国に**ユ**出する。",
+    "militaryExample": "前線への物資**ユ**送ルートを確保する。"
   },
   {
     "explanation": "残ってあまることです。",
@@ -336,7 +355,8 @@
     ],
     "radical": "人",
     "component": "一八",
-    "example": "料理が**アマ**ってしまった。"
+    "example": "料理が**アマ**ってしまった。",
+    "militaryExample": "戦闘の**ヨ**波が民間人に及んだ。"
   },
   {
     "explanation": "人や物を他の人にあずけることです。",
@@ -354,7 +374,8 @@
     ],
     "radical": "頁",
     "component": "予",
-    "example": "荷物を駅のロッカーに**アズ**ける。"
+    "example": "荷物を駅のロッカーに**アズ**ける。",
+    "militaryExample": "重要な軍事情報を上官に**アズ**ける。"
   },
   {
     "explanation": "中に入れたり、含んだりできる量のことです。",
@@ -370,7 +391,8 @@
     ],
     "radical": "宀",
     "component": "谷",
-    "example": "箱の**ヨウ**量を測る。"
+    "example": "箱の**ヨウ**量を測る。",
+    "militaryExample": "新型戦車の燃料**ヨウ**量が増加した。"
   },
   {
     "explanation": "本当の形から一部をぬいて、簡単にすることです。",
@@ -386,7 +408,8 @@
     ],
     "radical": "田",
     "component": "各",
-    "example": "名前を**リャク**して書く。"
+    "example": "名前を**リャク**して書く。",
+    "militaryExample": "将軍が戦**リャク**を練る。"
   },
   {
     "explanation": "そこにとどめておくことです。",
@@ -403,7 +426,8 @@
     ],
     "radical": "田",
     "component": "卯",
-    "example": "扉を**トメ**る。"
+    "example": "扉を**トメ**る。",
+    "militaryExample": "部隊を前線に**トド**める命令が下った。"
   },
   {
     "explanation": "国や大きな範囲を治めることです。",
@@ -419,6 +443,7 @@
     ],
     "radical": "頁",
     "component": "令",
-    "example": "**リョウ**域を広げる。"
+    "example": "**リョウ**域を広げる。",
+    "militaryExample": "国の**リョウ**土を守るために戦う。"
   }
 ]
