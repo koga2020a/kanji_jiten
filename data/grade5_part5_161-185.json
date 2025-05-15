@@ -1,0 +1,424 @@
+[
+  {
+    "explanation": "お金や財産などが多いことです。",
+    "correct": "富",
+    "readings": [
+      "とみ",
+      "フ"
+    ],
+    "options": [
+      "富",
+      "武",
+      "復",
+      "複"
+    ],
+    "radical": "宀",
+    "component": "畐",
+    "example": "人々の**トミ**を分かち合う。"
+  },
+  {
+    "explanation": "戦いや武道などに関することです。",
+    "correct": "武",
+    "readings": [
+      "たけ",
+      "ブ"
+    ],
+    "options": [
+      "武",
+      "復",
+      "複",
+      "仏"
+    ],
+    "radical": "止",
+    "component": "弋",
+    "example": "剣道の**ブ**道を習う。"
+  },
+  {
+    "explanation": "もとに戻ることです。",
+    "correct": "復",
+    "readings": [
+      "ふく",
+      "フク"
+    ],
+    "options": [
+      "復",
+      "複",
+      "仏",
+      "編"
+    ],
+    "radical": "彳",
+    "component": "复",
+    "example": "町を**フク**興する。"
+  },
+  {
+    "explanation": "同じものが重なっていることです。",
+    "correct": "複",
+    "readings": [
+      "ふく",
+      "フク"
+    ],
+    "options": [
+      "複",
+      "仏",
+      "編",
+      "弁"
+    ],
+    "radical": "衣",
+    "component": "畐",
+    "example": "問題を**フク**数して考える。"
+  },
+  {
+    "explanation": "お寺の神さまや仏教に関することです。",
+    "correct": "仏",
+    "readings": [
+      "ほとけ",
+      "ブツ"
+    ],
+    "options": [
+      "仏",
+      "編",
+      "弁",
+      "保"
+    ],
+    "radical": "亻",
+    "component": "弗",
+    "example": "寺の**ホトケ**に手を合わせる。"
+  },
+  {
+    "explanation": "いくつかをつないで作ることです。",
+    "correct": "編",
+    "readings": [
+      "あ（む）",
+      "ヘン"
+    ],
+    "options": [
+      "編",
+      "弁",
+      "保",
+      "墓"
+    ],
+    "radical": "糸",
+    "component": "扁",
+    "example": "冬にマフラーを**アム**。"
+  },
+  {
+    "explanation": "話したり説明したりすることです。",
+    "correct": "弁",
+    "readings": [
+      "べん",
+      "ヘン"
+    ],
+    "options": [
+      "弁",
+      "保",
+      "墓",
+      "報"
+    ],
+    "radical": "辛",
+    "component": "",
+    "example": "駅前で**ベン**当を買う。"
+  },
+  {
+    "explanation": "守ったり大切にしたりすることです。",
+    "correct": "保",
+    "readings": [
+      "たも（つ）",
+      "ホ"
+    ],
+    "options": [
+      "保",
+      "墓",
+      "報",
+      "豊"
+    ],
+    "radical": "亻",
+    "component": "呆",
+    "example": "約束を**タモツ**。"
+  },
+  {
+    "explanation": "人の死を記念して作る石などのことです。",
+    "correct": "墓",
+    "readings": [
+      "はか",
+      "ボ"
+    ],
+    "options": [
+      "墓",
+      "報",
+      "豊",
+      "防"
+    ],
+    "radical": "土",
+    "component": "莫",
+    "example": "おじいちゃんの**ハカ**参りをする。"
+  },
+  {
+    "explanation": "知らせることや知らせです。",
+    "correct": "報",
+    "readings": [
+      "むく（いる）",
+      "ホウ"
+    ],
+    "options": [
+      "報",
+      "豊",
+      "防",
+      "貿"
+    ],
+    "radical": "土",
+    "component": "幸",
+    "example": "努力が**ムク**われる。"
+  },
+  {
+    "explanation": "たくさんあってゆたかなことです。",
+    "correct": "豊",
+    "readings": [
+      "ゆたか",
+      "ホウ"
+    ],
+    "options": [
+      "豊",
+      "防",
+      "貿",
+      "暴"
+    ],
+    "radical": "豆",
+    "component": "曲",
+    "example": "**ユタカ**な自然を楽しむ。"
+  },
+  {
+    "explanation": "あぶないことをふせぐことです。",
+    "correct": "防",
+    "readings": [
+      "ふせ（ぐ）",
+      "ボウ"
+    ],
+    "options": [
+      "防",
+      "貿",
+      "暴",
+      "務"
+    ],
+    "radical": "阝",
+    "component": "方",
+    "example": "台風を**フセ**ぐために準備する。"
+  },
+  {
+    "explanation": "国と国とで物をやりとりすることです。",
+    "correct": "貿",
+    "readings": [
+      "ボウ"
+    ],
+    "options": [
+      "貿",
+      "暴",
+      "務",
+      "夢"
+    ],
+    "radical": "貝",
+    "component": "冒",
+    "example": "日本と外国が物を**ボウ**易する。"
+  },
+  {
+    "explanation": "おさえられずに荒っぽくあらわれることです。",
+    "correct": "暴",
+    "readings": [
+      "あば（く）",
+      "あば（れる）",
+      "ボウ"
+    ],
+    "options": [
+      "暴",
+      "務",
+      "夢",
+      "迷"
+    ],
+    "radical": "日",
+    "component": "共",
+    "example": "子どもが**アバ**れる。"
+  },
+  {
+    "explanation": "つとめとして行うことです。",
+    "correct": "務",
+    "readings": [
+      "つと（める）",
+      "ム"
+    ],
+    "options": [
+      "務",
+      "夢",
+      "迷",
+      "綿"
+    ],
+    "radical": "力",
+    "component": "無",
+    "example": "学校で係の仕事を**ツト**める。"
+  },
+  {
+    "explanation": "眠っているときに見る不思議な世界のことです。",
+    "correct": "夢",
+    "readings": [
+      "ゆめ",
+      "ム"
+    ],
+    "options": [
+      "夢",
+      "迷",
+      "綿",
+      "輸"
+    ],
+    "radical": "艹",
+    "component": "冖夕",
+    "example": "昨日見た**ユメ**を覚えている。"
+  },
+  {
+    "explanation": "どうしたらいいか、わからなくなることです。",
+    "correct": "迷",
+    "readings": [
+      "まよ（う）",
+      "メイ"
+    ],
+    "options": [
+      "迷",
+      "綿",
+      "輸",
+      "余"
+    ],
+    "radical": "辶",
+    "component": "米",
+    "example": "道に**マヨ**ってしまった。"
+  },
+  {
+    "explanation": "木からとれるふわふわした白い部分です。",
+    "correct": "綿",
+    "readings": [
+      "わた",
+      "メン"
+    ],
+    "options": [
+      "綿",
+      "輸",
+      "余",
+      "預"
+    ],
+    "radical": "糸",
+    "component": "帛",
+    "example": "クッションに**ワタ**を詰める。"
+  },
+  {
+    "explanation": "物を遠いところへはこぶことです。",
+    "correct": "輸",
+    "readings": [
+      "ユ"
+    ],
+    "options": [
+      "輸",
+      "余",
+      "預",
+      "容"
+    ],
+    "radical": "車",
+    "component": "兪",
+    "example": "野菜を他国に**ユ**出する。"
+  },
+  {
+    "explanation": "残ってあまることです。",
+    "correct": "余",
+    "readings": [
+      "あま（る）",
+      "ヨ"
+    ],
+    "options": [
+      "余",
+      "預",
+      "容",
+      "略"
+    ],
+    "radical": "人",
+    "component": "一八",
+    "example": "料理が**アマ**ってしまった。"
+  },
+  {
+    "explanation": "人や物を他の人にあずけることです。",
+    "correct": "預",
+    "readings": [
+      "あず（ける）",
+      "あず（かる）",
+      "ヨ"
+    ],
+    "options": [
+      "預",
+      "容",
+      "略",
+      "留"
+    ],
+    "radical": "頁",
+    "component": "予",
+    "example": "荷物を駅のロッカーに**アズ**ける。"
+  },
+  {
+    "explanation": "中に入れたり、含んだりできる量のことです。",
+    "correct": "容",
+    "readings": [
+      "ヨウ"
+    ],
+    "options": [
+      "容",
+      "略",
+      "留",
+      "領"
+    ],
+    "radical": "宀",
+    "component": "谷",
+    "example": "箱の**ヨウ**量を測る。"
+  },
+  {
+    "explanation": "本当の形から一部をぬいて、簡単にすることです。",
+    "correct": "略",
+    "readings": [
+      "リャク"
+    ],
+    "options": [
+      "略",
+      "留",
+      "領",
+      "富"
+    ],
+    "radical": "田",
+    "component": "各",
+    "example": "名前を**リャク**して書く。"
+  },
+  {
+    "explanation": "そこにとどめておくことです。",
+    "correct": "留",
+    "readings": [
+      "とめる",
+      "リュウ"
+    ],
+    "options": [
+      "留",
+      "領",
+      "富",
+      "武"
+    ],
+    "radical": "田",
+    "component": "卯",
+    "example": "扉を**トメ**る。"
+  },
+  {
+    "explanation": "国や大きな範囲を治めることです。",
+    "correct": "領",
+    "readings": [
+      "リョウ"
+    ],
+    "options": [
+      "領",
+      "富",
+      "武",
+      "復"
+    ],
+    "radical": "頁",
+    "component": "令",
+    "example": "**リョウ**域を広げる。"
+  }
+]

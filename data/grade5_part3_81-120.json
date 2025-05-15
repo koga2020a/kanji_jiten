@@ -1,0 +1,666 @@
+[
+  {
+    "explanation": "お金や資料のことです。",
+    "correct": "資",
+    "readings": [
+      "し"
+    ],
+    "options": [
+      "資",
+      "飼",
+      "示",
+      "似"
+    ],
+    "radical": "貝",
+    "component": "",
+    "example": "学習に**シ**料を集めた。"
+  },
+  {
+    "explanation": "動物を世話して育てることです。",
+    "correct": "飼",
+    "readings": [
+      "か（う）",
+      "し"
+    ],
+    "options": [
+      "飼",
+      "示",
+      "似",
+      "識"
+    ],
+    "radical": "食",
+    "component": "",
+    "example": "犬を**か**い始めた。"
+  },
+  {
+    "explanation": "人に知らせるために見せることです。",
+    "correct": "示",
+    "readings": [
+      "しめ（す）",
+      "じ"
+    ],
+    "options": [
+      "示",
+      "似",
+      "識",
+      "質"
+    ],
+    "radical": "示",
+    "component": "",
+    "example": "地図に**しめ**しをつける。"
+  },
+  {
+    "explanation": "形や様子が同じであることです。",
+    "correct": "似",
+    "readings": [
+      "に（る）",
+      "じ"
+    ],
+    "options": [
+      "似",
+      "識",
+      "質",
+      "舎"
+    ],
+    "radical": "人",
+    "component": "",
+    "example": "兄に**に**ていると言われた。"
+  },
+  {
+    "explanation": "知ること、わかることです。",
+    "correct": "識",
+    "readings": [
+      "しき"
+    ],
+    "options": [
+      "識",
+      "質",
+      "舎",
+      "謝"
+    ],
+    "radical": "言",
+    "component": "",
+    "example": "新しい**シキ**を身につける。"
+  },
+  {
+    "explanation": "ものの品質や値打ちのことです。",
+    "correct": "質",
+    "readings": [
+      "しつ"
+    ],
+    "options": [
+      "質",
+      "舎",
+      "謝",
+      "授"
+    ],
+    "radical": "貝",
+    "component": "",
+    "example": "この商品の**シツ**が高い。"
+  },
+  {
+    "explanation": "やどや建物のことです。",
+    "correct": "舎",
+    "readings": [
+      "やど",
+      "しゃ"
+    ],
+    "options": [
+      "舎",
+      "謝",
+      "授",
+      "修"
+    ],
+    "radical": "舌",
+    "component": "",
+    "example": "新しい**コウシャ**ができた。"
+  },
+  {
+    "explanation": "わびること、お礼を言うことです。",
+    "correct": "謝",
+    "readings": [
+      "あやま（る）",
+      "しゃ"
+    ],
+    "options": [
+      "謝",
+      "授",
+      "修",
+      "述"
+    ],
+    "radical": "言",
+    "component": "",
+    "example": "お世話になった人に**しゃ**謝する。"
+  },
+  {
+    "explanation": "人に物や知識を与えることです。",
+    "correct": "授",
+    "readings": [
+      "さず（ける）",
+      "じゅ"
+    ],
+    "options": [
+      "授",
+      "修",
+      "述",
+      "術"
+    ],
+    "radical": "扌",
+    "component": "",
+    "example": "先生が**ジュ**授を行う。"
+  },
+  {
+    "explanation": "なおしたり、学んだりすることです。",
+    "correct": "修",
+    "readings": [
+      "おさ（める）",
+      "しゅう"
+    ],
+    "options": [
+      "修",
+      "述",
+      "術",
+      "準"
+    ],
+    "radical": "宀",
+    "component": "",
+    "example": "自転車を**シュウ**修する。"
+  },
+  {
+    "explanation": "思いや考えを言葉にすることです。",
+    "correct": "述",
+    "readings": [
+      "の（べる）",
+      "じゅつ"
+    ],
+    "options": [
+      "述",
+      "術",
+      "準",
+      "序"
+    ],
+    "radical": "辶",
+    "component": "",
+    "example": "意見を**の**べる。"
+  },
+  {
+    "explanation": "技術や方法のことです。",
+    "correct": "術",
+    "readings": [
+      "すべ（る）",
+      "じゅつ"
+    ],
+    "options": [
+      "術",
+      "準",
+      "序",
+      "招"
+    ],
+    "radical": "行",
+    "component": "",
+    "example": "手**ジュツ**を学ぶ。"
+  },
+  {
+    "explanation": "基準や水準となることです。",
+    "correct": "準",
+    "readings": [
+      "じゅん"
+    ],
+    "options": [
+      "準",
+      "序",
+      "招",
+      "承"
+    ],
+    "radical": "水",
+    "component": "",
+    "example": "試験の**ジュン**備をする。"
+  },
+  {
+    "explanation": "順番に並べることです。",
+    "correct": "序",
+    "readings": [
+      "じょ"
+    ],
+    "options": [
+      "序",
+      "招",
+      "承",
+      "証"
+    ],
+    "radical": "广",
+    "component": "",
+    "example": "ファイルを**ジョ**序に整理する。"
+  },
+  {
+    "explanation": "人を呼び寄せることです。",
+    "correct": "招",
+    "readings": [
+      "まね（く）",
+      "しょう"
+    ],
+    "options": [
+      "招",
+      "承",
+      "証",
+      "条"
+    ],
+    "radical": "扌",
+    "component": "",
+    "example": "友だちをパーティーに**まね**く。"
+  },
+  {
+    "explanation": "受けて引き受けることです。",
+    "correct": "承",
+    "readings": [
+      "うけたまわ（る）",
+      "しょう"
+    ],
+    "options": [
+      "承",
+      "証",
+      "条",
+      "状"
+    ],
+    "radical": "寸",
+    "component": "",
+    "example": "部長の依頼を**ショウ**承した。"
+  },
+  {
+    "explanation": "本当であると認めることです。",
+    "correct": "証",
+    "readings": [
+      "あかし",
+      "しょう"
+    ],
+    "options": [
+      "証",
+      "条",
+      "状",
+      "常"
+    ],
+    "radical": "言",
+    "component": "",
+    "example": "努力の証に**ショウ**状をもらった。"
+  },
+  {
+    "explanation": "細長いものや条件のことです。",
+    "correct": "条",
+    "readings": [
+      "えだ",
+      "じょう"
+    ],
+    "options": [
+      "条",
+      "状",
+      "常",
+      "情"
+    ],
+    "radical": "木",
+    "component": "",
+    "example": "契約の**ジョウ**項を読む。"
+  },
+  {
+    "explanation": "手紙の書き出しや様子のことです。",
+    "correct": "状",
+    "readings": [
+      "じょう"
+    ],
+    "options": [
+      "状",
+      "常",
+      "情",
+      "織"
+    ],
+    "radical": "犬",
+    "component": "",
+    "example": "病状を**ジョウ**報する。"
+  },
+  {
+    "explanation": "いつもと同じであることです。",
+    "correct": "常",
+    "readings": [
+      "つね",
+      "じょう"
+    ],
+    "options": [
+      "常",
+      "情",
+      "織",
+      "職"
+    ],
+    "radical": "巾",
+    "component": "",
+    "example": "彼は**ジョウ**に運動をする。"
+  },
+  {
+    "explanation": "思いやりの気持ちや心の様子です。",
+    "correct": "情",
+    "readings": [
+      "なさ（け）",
+      "じょう"
+    ],
+    "options": [
+      "情",
+      "織",
+      "職",
+      "制"
+    ],
+    "radical": "忄",
+    "component": "",
+    "example": "人への**ジョウ**思を大切にする。"
+  },
+  {
+    "explanation": "糸で布を作ることです。",
+    "correct": "織",
+    "readings": [
+      "お（る）",
+      "しょく"
+    ],
+    "options": [
+      "織",
+      "職",
+      "制",
+      "性"
+    ],
+    "radical": "糸",
+    "component": "",
+    "example": "機織機で布を**お**る。"
+  },
+  {
+    "explanation": "仕事や役目のことです。",
+    "correct": "職",
+    "readings": [
+      "しょく"
+    ],
+    "options": [
+      "職",
+      "制",
+      "性",
+      "政"
+    ],
+    "radical": "耳",
+    "component": "",
+    "example": "将来の**ショク**業を考える。"
+  },
+  {
+    "explanation": "規則や仕組みを作ることです。",
+    "correct": "制",
+    "readings": [
+      "せい"
+    ],
+    "options": [
+      "制",
+      "性",
+      "政",
+      "勢"
+    ],
+    "radical": "刀",
+    "component": "",
+    "example": "規則を**セイ**定する。"
+  },
+  {
+    "explanation": "人や物の性質や特徴のことです。",
+    "correct": "性",
+    "readings": [
+      "さが",
+      "せい"
+    ],
+    "options": [
+      "性",
+      "政",
+      "勢",
+      "精"
+    ],
+    "radical": "忄",
+    "component": "",
+    "example": "猫の**セイ**質を調べる。"
+  },
+  {
+    "explanation": "国や社会を治めることです。",
+    "correct": "政",
+    "readings": [
+      "まつりごと",
+      "せい"
+    ],
+    "options": [
+      "政",
+      "勢",
+      "精",
+      "製"
+    ],
+    "radical": "攴",
+    "component": "",
+    "example": "政府の**セイ**策を学ぶ。"
+  },
+  {
+    "explanation": "力や動きの強さのことです。",
+    "correct": "勢",
+    "readings": [
+      "いきお（い）",
+      "せい"
+    ],
+    "options": [
+      "勢",
+      "精",
+      "製",
+      "税"
+    ],
+    "radical": "力",
+    "component": "",
+    "example": "風の**セイ**いが強い。"
+  },
+  {
+    "explanation": "細かくてきれいなことです。",
+    "correct": "精",
+    "readings": [
+      "せい"
+    ],
+    "options": [
+      "精",
+      "製",
+      "税",
+      "責"
+    ],
+    "radical": "米",
+    "component": "",
+    "example": "米を**セイ**米する。"
+  },
+  {
+    "explanation": "物を作ることです。",
+    "correct": "製",
+    "readings": [
+      "せい"
+    ],
+    "options": [
+      "製",
+      "税",
+      "責",
+      "績"
+    ],
+    "radical": "衣",
+    "component": "",
+    "example": "部品を**セイ**造する。"
+  },
+  {
+    "explanation": "国に納めるお金のことです。",
+    "correct": "税",
+    "readings": [
+      "ぜい"
+    ],
+    "options": [
+      "税",
+      "責",
+      "績",
+      "接"
+    ],
+    "radical": "禾",
+    "component": "",
+    "example": "消費**ゼイ**を支払う。"
+  },
+  {
+    "explanation": "責任を負うことです。",
+    "correct": "責",
+    "readings": [
+      "せき"
+    ],
+    "options": [
+      "責",
+      "績",
+      "接",
+      "設"
+    ],
+    "radical": "貝",
+    "component": "",
+    "example": "仕事の**セキ**任を果たす。"
+  },
+  {
+    "explanation": "成果や働きの跡のことです。",
+    "correct": "績",
+    "readings": [
+      "せき"
+    ],
+    "options": [
+      "績",
+      "接",
+      "設",
+      "舌"
+    ],
+    "radical": "糸",
+    "component": "",
+    "example": "学業の**セキ**績を褒められた。"
+  },
+  {
+    "explanation": "つなぐことや近づけることです。",
+    "correct": "接",
+    "readings": [
+      "つ（ぐ）",
+      "せつ"
+    ],
+    "options": [
+      "接",
+      "設",
+      "舌",
+      "絶"
+    ],
+    "radical": "手",
+    "component": "",
+    "example": "部品を**セツ**接する。"
+  },
+  {
+    "explanation": "施設や仕組みを作ることです。",
+    "correct": "設",
+    "readings": [
+      "もう（ける）",
+      "せつ"
+    ],
+    "options": [
+      "設",
+      "舌",
+      "絶",
+      "銭"
+    ],
+    "radical": "言",
+    "component": "",
+    "example": "新しい図書館を**セツ**立する。"
+  },
+  {
+    "explanation": "口の中にある柔らかい部分です。",
+    "correct": "舌",
+    "readings": [
+      "した"
+    ],
+    "options": [
+      "舌",
+      "絶",
+      "銭",
+      "祖"
+    ],
+    "radical": "舌",
+    "component": "",
+    "example": "**シタ**を出して冷ます。"
+  },
+  {
+    "explanation": "途切れることや断つことです。",
+    "correct": "絶",
+    "readings": [
+      "た（える）",
+      "ぜつ"
+    ],
+    "options": [
+      "絶",
+      "銭",
+      "祖",
+      "素"
+    ],
+    "radical": "糸",
+    "component": "",
+    "example": "連絡が**ゼツ**絶した。"
+  },
+  {
+    "explanation": "昔のお金の単位のことです。",
+    "correct": "銭",
+    "readings": [
+      "ぜに"
+    ],
+    "options": [
+      "銭",
+      "祖",
+      "素",
+      "総"
+    ],
+    "radical": "金",
+    "component": "",
+    "example": "小銭を**ゼニ**で支払う。"
+  },
+  {
+    "explanation": "先祖や先人のことです。",
+    "correct": "祖",
+    "readings": [
+      "そ"
+    ],
+    "options": [
+      "祖",
+      "素",
+      "総",
+      "資"
+    ],
+    "radical": "礻",
+    "component": "",
+    "example": "**ソ**祖を敬う。"
+  },
+  {
+    "explanation": "もとのままのことや材料のことです。",
+    "correct": "素",
+    "readings": [
+      "もと",
+      "そ"
+    ],
+    "options": [
+      "素",
+      "総",
+      "資",
+      "飼"
+    ],
+    "radical": "糸",
+    "component": "",
+    "example": "材料の**ソ**材を使う。"
+  },
+  {
+    "explanation": "全部まとめることです。",
+    "correct": "総",
+    "readings": [
+      "す（べ）",
+      "そう"
+    ],
+    "options": [
+      "総",
+      "資",
+      "飼",
+      "示"
+    ],
+    "radical": "糸",
+    "component": "",
+    "example": "データを**ソウ**合して報告する。"
+  }
+]

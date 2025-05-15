@@ -1,0 +1,671 @@
+[
+  {
+    "explanation": "橋や建物を作ることです。",
+    "correct": "造",
+    "readings": [
+      "つくる",
+      "ぞう"
+    ],
+    "options": [
+      "造",
+      "像",
+      "増",
+      "則"
+    ],
+    "radical": "辶",
+    "component": "告",
+    "example": "新しい橋を**ゾウ**造する。"
+  },
+  {
+    "explanation": "人や物の形を表す絵や印象のことです。",
+    "correct": "像",
+    "readings": [
+      "ぞう"
+    ],
+    "options": [
+      "像",
+      "増",
+      "則",
+      "測"
+    ],
+    "radical": "人",
+    "component": "象",
+    "example": "**ゾウ**像を思い浮かべる。"
+  },
+  {
+    "explanation": "数や量が多くなることです。",
+    "correct": "増",
+    "readings": [
+      "ふ（える）",
+      "ぞう"
+    ],
+    "options": [
+      "増",
+      "則",
+      "測",
+      "属"
+    ],
+    "radical": "土",
+    "component": "曽",
+    "example": "人口が**ゾウ**加している。"
+  },
+  {
+    "explanation": "きまりや手本のことです。",
+    "correct": "則",
+    "readings": [
+      "のっと（る）",
+      "そく"
+    ],
+    "options": [
+      "則",
+      "測",
+      "属",
+      "率"
+    ],
+    "radical": "刀",
+    "component": "貝",
+    "example": "ルールを**ソク**守する。"
+  },
+  {
+    "explanation": "深さや長さなどを調べることです。",
+    "correct": "測",
+    "readings": [
+      "はか（る）",
+      "そく"
+    ],
+    "options": [
+      "測",
+      "属",
+      "率",
+      "損"
+    ],
+    "radical": "氵",
+    "component": "則",
+    "example": "川の深さを**ソク**定する。"
+  },
+  {
+    "explanation": "ある集団に入っていることです。",
+    "correct": "属",
+    "readings": [
+      "ぞく"
+    ],
+    "options": [
+      "属",
+      "率",
+      "損",
+      "退"
+    ],
+    "radical": "尸",
+    "component": "豕",
+    "example": "部活動に**ゾク**属する。"
+  },
+  {
+    "explanation": "仲間をまとめて引っぱることです。",
+    "correct": "率",
+    "readings": [
+      "ひきいる",
+      "そつ"
+    ],
+    "options": [
+      "率",
+      "損",
+      "退",
+      "貸"
+    ],
+    "radical": "玄",
+    "component": "",
+    "example": "クラスを**ソツ**率する。"
+  },
+  {
+    "explanation": "傷つけたり、失ったりすることです。",
+    "correct": "損",
+    "readings": [
+      "そこ（なう）",
+      "そん"
+    ],
+    "options": [
+      "損",
+      "退",
+      "貸",
+      "態"
+    ],
+    "radical": "扌",
+    "component": "員",
+    "example": "車が**ソン**傷した。"
+  },
+  {
+    "explanation": "後ろに下がることです。",
+    "correct": "退",
+    "readings": [
+      "しりぞ（く）",
+      "たい"
+    ],
+    "options": [
+      "退",
+      "貸",
+      "態",
+      "団"
+    ],
+    "radical": "辶",
+    "component": "艮",
+    "example": "会議を**タイ**席する。"
+  },
+  {
+    "explanation": "物を一時的に使わせることです。",
+    "correct": "貸",
+    "readings": [
+      "か（す）",
+      "たい"
+    ],
+    "options": [
+      "貸",
+      "態",
+      "団",
+      "断"
+    ],
+    "radical": "貝",
+    "component": "代",
+    "example": "本を友だちに**タイ**す。"
+  },
+  {
+    "explanation": "様子や状態のことです。",
+    "correct": "態",
+    "readings": [
+      "たい"
+    ],
+    "options": [
+      "態",
+      "団",
+      "断",
+      "築"
+    ],
+    "radical": "心",
+    "component": "台",
+    "example": "急な**タイ**勢に注意。"
+  },
+  {
+    "explanation": "人やものが集まったかたまりのことです。",
+    "correct": "団",
+    "readings": [
+      "だん"
+    ],
+    "options": [
+      "団",
+      "断",
+      "築",
+      "張"
+    ],
+    "radical": "囗",
+    "component": "寸",
+    "example": "整**ダン**を組む。"
+  },
+  {
+    "explanation": "切り離すことです。",
+    "correct": "断",
+    "readings": [
+      "た（つ）",
+      "だん"
+    ],
+    "options": [
+      "断",
+      "築",
+      "張",
+      "提"
+    ],
+    "radical": "斤",
+    "component": "旦",
+    "example": "木を**ダン**断する。"
+  },
+  {
+    "explanation": "建物を作ることです。",
+    "correct": "築",
+    "readings": [
+      "きず（く）",
+      "ちく"
+    ],
+    "options": [
+      "築",
+      "張",
+      "提",
+      "程"
+    ],
+    "radical": "竹",
+    "component": "筑",
+    "example": "新しいビルを**チク**造する。"
+  },
+  {
+    "explanation": "のばすことや張ることです。",
+    "correct": "張",
+    "readings": [
+      "は（る）",
+      "ちょう"
+    ],
+    "options": [
+      "張",
+      "提",
+      "程",
+      "適"
+    ],
+    "radical": "弓",
+    "component": "長",
+    "example": "ポスターを**チョウ**る。"
+  },
+  {
+    "explanation": "手に持ってさげることです。",
+    "correct": "提",
+    "readings": [
+      "さ（げる）",
+      "てい"
+    ],
+    "options": [
+      "提",
+      "程",
+      "適",
+      "敵"
+    ],
+    "radical": "扌",
+    "component": "是",
+    "example": "バッグを肩に**テイ**げる。"
+  },
+  {
+    "explanation": "程度や長さのことです。",
+    "correct": "程",
+    "readings": [
+      "ほど",
+      "てい"
+    ],
+    "options": [
+      "程",
+      "適",
+      "敵",
+      "統"
+    ],
+    "radical": "禾",
+    "component": "呈",
+    "example": "仕事の進**テイ**度を確かめる。"
+  },
+  {
+    "explanation": "ぴったり合うことです。",
+    "correct": "適",
+    "readings": [
+      "かな（う）",
+      "てき"
+    ],
+    "options": [
+      "適",
+      "敵",
+      "統",
+      "銅"
+    ],
+    "radical": "辶",
+    "component": "啇",
+    "example": "サイズが**テキ**合する。"
+  },
+  {
+    "explanation": "戦う相手のことです。",
+    "correct": "敵",
+    "readings": [
+      "かたき",
+      "てき"
+    ],
+    "options": [
+      "敵",
+      "統",
+      "銅",
+      "導"
+    ],
+    "radical": "攴",
+    "component": "易",
+    "example": "ライバルを**テキ**視する。"
+  },
+  {
+    "explanation": "まとめて一つにすることです。",
+    "correct": "統",
+    "readings": [
+      "す（べる）",
+      "とう"
+    ],
+    "options": [
+      "統",
+      "銅",
+      "導",
+      "徳"
+    ],
+    "radical": "糸",
+    "component": "充",
+    "example": "データを**トウ**合する。"
+  },
+  {
+    "explanation": "金属の一つで、硬いものです。",
+    "correct": "銅",
+    "readings": [
+      "どう"
+    ],
+    "options": [
+      "銅",
+      "導",
+      "徳",
+      "独"
+    ],
+    "radical": "金",
+    "component": "同",
+    "example": "銅**ドウ**製のベル。"
+  },
+  {
+    "explanation": "先に案内することです。",
+    "correct": "導",
+    "readings": [
+      "みちび（く）",
+      "どう"
+    ],
+    "options": [
+      "導",
+      "徳",
+      "独",
+      "任"
+    ],
+    "radical": "寸",
+    "component": "道",
+    "example": "観光客を**ドウ**導する。"
+  },
+  {
+    "explanation": "人の良い心のことです。",
+    "correct": "徳",
+    "readings": [
+      "とく"
+    ],
+    "options": [
+      "徳",
+      "独",
+      "任",
+      "燃"
+    ],
+    "radical": "彳",
+    "component": "直",
+    "example": "人徳を**トク**く人。"
+  },
+  {
+    "explanation": "一人であることです。",
+    "correct": "独",
+    "readings": [
+      "ひと（り）",
+      "どく"
+    ],
+    "options": [
+      "独",
+      "任",
+      "燃",
+      "能"
+    ],
+    "radical": "犭",
+    "component": "蜀",
+    "example": "一人**ドク**り立ち。"
+  },
+  {
+    "explanation": "仕事をゆだねることです。",
+    "correct": "任",
+    "readings": [
+      "まか（せる）",
+      "にん"
+    ],
+    "options": [
+      "任",
+      "燃",
+      "能",
+      "破"
+    ],
+    "radical": "人",
+    "component": "壬",
+    "example": "部長に**ニン**命する。"
+  },
+  {
+    "explanation": "火がついてしだいに燃えることです。",
+    "correct": "燃",
+    "readings": [
+      "も（える）",
+      "ねん"
+    ],
+    "options": [
+      "燃",
+      "能",
+      "破",
+      "犯"
+    ],
+    "radical": "火",
+    "component": "然",
+    "example": "薪が**ネン**える。"
+  },
+  {
+    "explanation": "できる力のことです。",
+    "correct": "能",
+    "readings": [
+      "のう"
+    ],
+    "options": [
+      "能",
+      "破",
+      "犯",
+      "判"
+    ],
+    "radical": "月",
+    "component": "匕",
+    "example": "音楽の**ノウ**力を伸ばす。"
+  },
+  {
+    "explanation": "こわしたり、切れたりすることです。",
+    "correct": "破",
+    "readings": [
+      "やぶ（る）",
+      "は"
+    ],
+    "options": [
+      "破",
+      "犯",
+      "判",
+      "版"
+    ],
+    "radical": "石",
+    "component": "皮",
+    "example": "紙を**ハ**る。"
+  },
+  {
+    "explanation": "悪いことをすることです。",
+    "correct": "犯",
+    "readings": [
+      "おか（す）",
+      "はん"
+    ],
+    "options": [
+      "犯",
+      "判",
+      "版",
+      "比"
+    ],
+    "radical": "犬",
+    "component": "氾",
+    "example": "法律を**ハン**す。"
+  },
+  {
+    "explanation": "区別して決めることです。",
+    "correct": "判",
+    "readings": [
+      "わか（る）",
+      "はん"
+    ],
+    "options": [
+      "判",
+      "版",
+      "比",
+      "肥"
+    ],
+    "radical": "刀",
+    "component": "半",
+    "example": "勝敗を**ハン**明する。"
+  },
+  {
+    "explanation": "コピー用の版や、仕事の区切りのことです。",
+    "correct": "版",
+    "readings": [
+      "はん"
+    ],
+    "options": [
+      "版",
+      "比",
+      "肥",
+      "非"
+    ],
+    "radical": "片",
+    "component": "反",
+    "example": "印刷**バン**を作る。"
+  },
+  {
+    "explanation": "二つを見比べることです。",
+    "correct": "比",
+    "readings": [
+      "くら（べる）",
+      "ひ"
+    ],
+    "options": [
+      "比",
+      "肥",
+      "非",
+      "備"
+    ],
+    "radical": "比",
+    "component": "",
+    "example": "成績を**ヒ**べる。"
+  },
+  {
+    "explanation": "土が肥えて作物がよく育つことです。",
+    "correct": "肥",
+    "readings": [
+      "こ（える）",
+      "ひ"
+    ],
+    "options": [
+      "肥",
+      "非",
+      "備",
+      "俵"
+    ],
+    "radical": "月",
+    "component": "巴",
+    "example": "肥**ヒ**料をまく。"
+  },
+  {
+    "explanation": "よくないことを表す言葉です。",
+    "correct": "非",
+    "readings": [
+      "ひ"
+    ],
+    "options": [
+      "非",
+      "備",
+      "俵",
+      "評"
+    ],
+    "radical": "非",
+    "component": "",
+    "example": "非**ヒ**常事態。"
+  },
+  {
+    "explanation": "あらかじめ準備することです。",
+    "correct": "備",
+    "readings": [
+      "そな（える）",
+      "び"
+    ],
+    "options": [
+      "備",
+      "俵",
+      "評",
+      "貧"
+    ],
+    "radical": "人",
+    "component": "畐",
+    "example": "防災**ビ**をする。"
+  },
+  {
+    "explanation": "米や麦を入れる袋のことです。",
+    "correct": "俵",
+    "readings": [
+      "たわら",
+      "ひょう"
+    ],
+    "options": [
+      "俵",
+      "評",
+      "貧",
+      "布"
+    ],
+    "radical": "人",
+    "component": "票",
+    "example": "米**ヒョウ**俵を運ぶ。"
+  },
+  {
+    "explanation": "人や物のよしあしを考えることです。",
+    "correct": "評",
+    "readings": [
+      "ひょう"
+    ],
+    "options": [
+      "評",
+      "貧",
+      "布",
+      "婦"
+    ],
+    "radical": "言",
+    "component": "平",
+    "example": "レビューで**ヒョウ**価する。"
+  },
+  {
+    "explanation": "お金や物がないことです。",
+    "correct": "貧",
+    "readings": [
+      "まず（しい）",
+      "ひん"
+    ],
+    "options": [
+      "貧",
+      "布",
+      "婦",
+      "造"
+    ],
+    "radical": "貝",
+    "component": "分",
+    "example": "貧**ヒン**困を救う。"
+  },
+  {
+    "explanation": "織物や布地のことです。",
+    "correct": "布",
+    "readings": [
+      "ぬの",
+      "ふ"
+    ],
+    "options": [
+      "布",
+      "婦",
+      "造",
+      "像"
+    ],
+    "radical": "巾",
+    "component": "",
+    "example": "シャツを**ヌノ**で作る。"
+  },
+  {
+    "explanation": "結婚した女性のことです。",
+    "correct": "婦",
+    "readings": [
+      "ふ"
+    ],
+    "options": [
+      "婦",
+      "造",
+      "像",
+      "増"
+    ],
+    "radical": "女",
+    "component": "帚",
+    "example": "主**フ**婦として働く。"
+  }
+]

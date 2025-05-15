@@ -30,6 +30,89 @@
     .correct { background: #c6f6d5; color: #2f855a; }
     .wrong { background: #fed7d7; color: #c53030; }
     .guide { background: #ebf8ff; padding: 12px; border-radius: 4px; color: #2c5282; margin-top: 16px; }
+    .quiz-button { 
+      margin-left: 8px;
+      padding: 4px 12px;
+      background: #4299e1;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .quiz-button:hover {
+      background: #3182ce;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+    .modal-content {
+      position: relative;
+      background: white;
+      width: 90%;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #666;
+    }
+    .quiz-question {
+      font-size: 24px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .quiz-info {
+      font-size: 16px;
+      color: #4a5568;
+      margin: 10px 0;
+      padding: 10px;
+      background: #f7fafc;
+      border-radius: 4px;
+    }
+    .quiz-info p {
+      margin: 5px 0;
+    }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .quiz-option {
+      padding: 15px;
+      font-size: 20px;
+      background: #edf2f7;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .quiz-option:hover {
+      background: #bee3f8;
+    }
+    .quiz-option.correct {
+      background: #c6f6d5;
+    }
+    .quiz-score {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #2d3748;
+    }
   </style>
 </head>
 <body>
@@ -44,6 +127,7 @@
         <input type="checkbox" id="showExamples" checked>
         例文を表示する
       </label>
+      <button id="quizBtn" class="quiz-button">クイズ</button>
     </div>
     <div id="explanations"></div>
     <div id="result"></div>
@@ -57,11 +141,25 @@
     </div>
   </div>
 
+  <!-- クイズモーダル -->
+  <div id="quizModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div class="quiz-question" id="quizQuestion"></div>
+      <div class="quiz-info" id="quizInfo"></div>
+      <div class="quiz-options" id="quizOptions"></div>
+      <div class="quiz-score" id="quizScore"></div>
+    </div>
+  </div>
+
   <script>
     let kanjiDatabase = {};
     let data = [];
     let selectedIndex = null;
     let shuffledOptions = [];
+    let quizScore = 0;
+    let currentQuizIndex = 0;
+    let quizQuestions = []; // クイズ用の問題リスト
 
     const searchInput = document.getElementById('searchInput');
     const searchBtn = document.getElementById('searchBtn');
@@ -69,17 +167,47 @@
     const resultDiv = document.getElementById('result');
     const guideDiv = document.getElementById('guide');
     const showExamplesCheckbox = document.getElementById('showExamples');
+    const quizBtn = document.getElementById('quizBtn');
+    const quizModal = document.getElementById('quizModal');
+    const quizQuestion = document.getElementById('quizQuestion');
+    const quizInfo = document.getElementById('quizInfo');
+    const quizOptions = document.getElementById('quizOptions');
+    const quizScoreDiv = document.getElementById('quizScore');
+    const closeButton = document.querySelector('.close-button');
 
-    // JSONファイルを読み込む
-    fetch('kanji_data_001.json')
-      .then(response => response.json())
-      .then(jsonData => {
-        kanjiDatabase = jsonData;
+    // 複数のJSONファイルを読み込む
+    async function loadAllKanjiData() {
+      try {
+        // 読み込むJSONファイルの一覧
+        const jsonFiles = [
+          'data/kanji_data_001.json',
+          'data/grade5_part1_1-40.json',
+          'data/grade5_part2_41-80.json',
+          'data/grade5_part3_81-120.json'
+        ];
+
+        // 各JSONファイルを読み込む
+        kanjiDatabase = [];
+        for (const file of jsonFiles) {
+          try {
+            const fileResponse = await fetch(file);
+            const fileData = await fileResponse.json();
+            // correct要素がある場合のみ追加
+            if (fileData.some(item => item.correct)) {
+              kanjiDatabase = kanjiDatabase.concat(fileData);
+            }
+          } catch (error) {
+            console.warn(`${file}の読み込みに失敗しました:`, error);
+          }
+        }
         render();
-      })
-      .catch(error => {
+      } catch (error) {
         console.error('データの読み込みに失敗しました:', error);
-      });
+      }
+    }
+
+    // 初期データ読み込み
+    loadAllKanjiData();
 
     function shuffle(arr) {
       return arr.sort(() => Math.random() - 0.5);
@@ -217,6 +345,111 @@
 
     // チェックボックスのイベントリスナーを追加
     showExamplesCheckbox.addEventListener('change', render);
+
+    // クイズ機能の実装
+    function startQuiz() {
+      if (kanjiDatabase.length === 0) return;
+      
+      // クイズ用の問題リストを作成（重複なし）
+      quizQuestions = shuffle([...kanjiDatabase]);
+      
+      quizScore = 0;
+      currentQuizIndex = 0;
+      showNextQuizQuestion();
+      quizModal.style.display = 'block';
+      updateQuizScore();
+    }
+
+    function showNextQuizQuestion() {
+      if (currentQuizIndex >= quizQuestions.length) {
+        endQuiz();
+        return;
+      }
+
+      const currentKanji = quizQuestions[currentQuizIndex];
+      quizQuestion.textContent = currentKanji.explanation;
+      
+      // 詳細情報を表示
+      const infoDiv = document.createElement('div');
+      infoDiv.className = 'quiz-info';
+      
+      // 読み仮名の表示
+      const readings = currentKanji.readings.join('、');
+      const readingsP = document.createElement('p');
+      readingsP.textContent = `読み: ${readings}`;
+      infoDiv.appendChild(readingsP);
+      
+      // 部首の表示
+      if (currentKanji.radical && currentKanji.radical !== currentKanji.correct) {
+        const radicalP = document.createElement('p');
+        radicalP.textContent = `部首: ${currentKanji.radical}`;
+        infoDiv.appendChild(radicalP);
+      }
+      
+      // つくり/へんの表示
+      if (currentKanji.component && currentKanji.component !== currentKanji.correct) {
+        const componentP = document.createElement('p');
+        componentP.textContent = `つくり/へん: ${currentKanji.component}`;
+        infoDiv.appendChild(componentP);
+      }
+      
+      // 例文の表示
+      if (currentKanji.example) {
+        const exampleP = document.createElement('p');
+        exampleP.innerHTML = `例文: ${formatExample(currentKanji.example, currentKanji.correct)}`;
+        infoDiv.appendChild(exampleP);
+      }
+      
+      // 既存の情報をクリアして新しい情報を追加
+      const existingInfo = quizQuestion.nextElementSibling;
+      if (existingInfo && existingInfo.className === 'quiz-info') {
+        existingInfo.remove();
+      }
+      quizQuestion.after(infoDiv);
+      
+      // 選択肢をシャッフル
+      const options = shuffle([...currentKanji.options]);
+      quizOptions.innerHTML = '';
+      
+      options.forEach(option => {
+        const button = document.createElement('button');
+        button.className = 'quiz-option';
+        button.textContent = option;
+        button.onclick = () => checkAnswer(option, currentKanji.correct, button);
+        quizOptions.appendChild(button);
+      });
+    }
+
+    function checkAnswer(selected, correct, button) {
+      if (selected === correct) {
+        button.classList.add('correct');
+        quizScore++;
+        updateQuizScore();
+        setTimeout(() => {
+          currentQuizIndex++;
+          showNextQuizQuestion();
+        }, 1000);
+      }
+    }
+
+    function updateQuizScore() {
+      quizScoreDiv.textContent = `正解数: ${quizScore} / ${currentQuizIndex} (残り: ${quizQuestions.length - currentQuizIndex}問)`;
+    }
+
+    function endQuiz() {
+      quizModal.style.display = 'none';
+      quizScore = 0;
+      currentQuizIndex = 0;
+    }
+
+    // イベントリスナーの追加
+    quizBtn.addEventListener('click', startQuiz);
+    closeButton.addEventListener('click', endQuiz);
+    window.addEventListener('click', (e) => {
+      if (e.target === quizModal) {
+        endQuiz();
+      }
+    });
 
     render();
   </script>
