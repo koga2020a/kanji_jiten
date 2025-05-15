@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>漢字学習アプリ</title>
+  <style>
+    body { font-family: sans-serif; background: #f7fafc; padding: 20px; }
+    .container { max-width: 400px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h1 { text-align: center; color: #2b6cb0; }
+    .input-group { display: flex; margin-bottom: 16px; }
+    .input-group input { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px 0 0 4px; }
+    .input-group button { padding: 8px 16px; border: none; background: #3182ce; color: #fff; border-radius: 0 4px 4px 0; cursor: pointer; }
+    .input-group button:hover { background: #2b6cb0; }
+    .list { list-style: none; padding: 0; background: #edf2f7; border-radius: 4px; }
+    .list-item { padding: 8px; border-bottom: 1px solid #cbd5e0; cursor: pointer; }
+    .list-item:last-child { border-bottom: none; }
+    .list-item:hover { background: #bee3f8; }
+    .list-item.selected { background: #90cdf4; }
+    .info { font-size: 14px; color: #4a5568; margin-top: 4px; }
+    .example { font-size: 14px; color: #4a5568; margin-top: 8px; padding: 8px; background: #f7fafc; border-radius: 4px; }
+    .example .highlight { font-weight: bold; }
+    .example-toggle { margin: 16px 0; }
+    .example-toggle label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+    .options { margin-left: 16px; margin-top: 8px; }
+    .options p { margin-bottom: 4px; font-weight: bold; }
+    .options button { width: 48px; height: 48px; margin-right: 4px; font-size: 20px; background: #e2e8f0; border: none; border-radius: 4px; cursor: pointer; }
+    .options button:hover { background: #bee3f8; }
+    .result { padding: 12px; border-radius: 4px; text-align: center; margin-top: 16px; }
+    .correct { background: #c6f6d5; color: #2f855a; }
+    .wrong { background: #fed7d7; color: #c53030; }
+    .guide { background: #ebf8ff; padding: 12px; border-radius: 4px; color: #2c5282; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>漢字学習アプリ</h1>
+    <div class="input-group">
+      <input type="text" id="searchInput" placeholder="読み仮名を入力">
+      <button id="searchBtn">検索</button>
+    </div>
+    <div class="example-toggle">
+      <label>
+        <input type="checkbox" id="showExamples" checked>
+        例文を表示する
+      </label>
+    </div>
+    <div id="explanations"></div>
+    <div id="result"></div>
+    <div id="guide" class="guide">
+      <p><strong>使用方法:</strong></p>
+      <ol>
+        <li>読み仮名（例：あめ、あき、くに）を入力して検索</li>
+        <li>表示された意味をクリック</li>
+        <li>正しい漢字を選択</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    let kanjiDatabase = {};
+    let data = [];
+    let selectedIndex = null;
+    let shuffledOptions = [];
+
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const explanationsDiv = document.getElementById('explanations');
+    const resultDiv = document.getElementById('result');
+    const guideDiv = document.getElementById('guide');
+    const showExamplesCheckbox = document.getElementById('showExamples');
+
+    // JSONファイルを読み込む
+    fetch('kanji_data_001.json')
+      .then(response => response.json())
+      .then(jsonData => {
+        kanjiDatabase = jsonData;
+        render();
+      })
+      .catch(error => {
+        console.error('データの読み込みに失敗しました:', error);
+      });
+
+    function shuffle(arr) {
+      return arr.sort(() => Math.random() - 0.5);
+    }
+
+    // 例文のハイライト処理
+    function formatExample(example, correct) {
+      if (!example) return '';
+      
+      // **で囲まれた部分を太字に
+      let formatted = example.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
+      
+      // correctの文字を検索文字に置換
+      if (correct) {
+        formatted = formatted.replace(correct, searchInput.value);
+      }
+      
+      return formatted;
+    }
+
+    function render() {
+      // ガイド表示制御
+      guideDiv.style.display = searchInput.value.trim() === '' ? 'block' : 'none';
+
+      // 説明リスト表示
+      explanationsDiv.innerHTML = '';
+      if (data.length) {
+        const ul = document.createElement('ul');
+        ul.className = 'list';
+        data.forEach((item, idx) => {
+          const isSelected = idx === selectedIndex;
+          const li = document.createElement('li');
+          li.className = 'list-item' + (isSelected ? ' selected' : '');
+          li.addEventListener('click', () => selectExplanation(idx));
+
+          const pExp = document.createElement('p');
+          pExp.textContent = item.explanation;
+          li.appendChild(pExp);
+
+          if (item.radical && item.radical !== item.correct) {
+            const pRad = document.createElement('p');
+            pRad.className = 'info';
+            pRad.textContent = '部首: ' + item.radical;
+            li.appendChild(pRad);
+          }
+          if (item.component && item.component !== item.correct) {
+            const pComp = document.createElement('p');
+            pComp.className = 'info';
+            pComp.textContent = 'つくり/へん: ' + item.component;
+            li.appendChild(pComp);
+          }
+
+          // 例文の表示
+          if (showExamplesCheckbox.checked && item.example) {
+            const pExample = document.createElement('p');
+            pExample.className = 'example';
+            pExample.innerHTML = formatExample(item.example, item.correct);
+            li.appendChild(pExample);
+          }
+
+          ul.appendChild(li);
+
+          if (isSelected) {
+            const optDiv = document.createElement('div');
+            optDiv.className = 'options';
+            const title = document.createElement('p');
+            title.textContent = '漢字を選んでください：';
+            optDiv.appendChild(title);
+            shuffledOptions.forEach(k => {
+              const btn = document.createElement('button');
+              btn.textContent = k;
+              btn.addEventListener('click', () => chooseKanji(k));
+              optDiv.appendChild(btn);
+            });
+            ul.appendChild(optDiv);
+          }
+        });
+        explanationsDiv.appendChild(ul);
+      }
+
+      // 結果表示
+      resultDiv.innerHTML = '';
+      resultDiv.className = '';
+    }
+
+    function selectExplanation(idx) {
+      selectedIndex = idx;
+      resultDiv.innerHTML = '';
+      resultDiv.className = '';
+      shuffledOptions = data[idx] ? shuffle([...data[idx].options]) : [];
+      render();
+    }
+
+    function chooseKanji(kanji) {
+      if (selectedIndex !== null) {
+        const correctChar = data[selectedIndex].correct;
+        resultDiv.innerHTML = correctChar === kanji
+          ? '<p><strong>正解!</strong></p>'
+          : '<p><strong>不正解</strong></p>';
+        resultDiv.className = 'result ' + (correctChar === kanji ? 'correct' : 'wrong');
+      }
+    }
+
+    function handleSearch() {
+      const key = searchInput.value.trim();
+      data = [];
+      
+      // すべての漢字データをチェック
+      for (const item of kanjiDatabase) {
+        // 入力された読み仮名が、その漢字のいずれかの読み仮名と一致するかチェック
+        if (item.readings.some(reading => reading === key)) {
+          data.push(item);
+        }
+      }
+      
+      selectedIndex = null;
+      shuffledOptions = [];
+      resultDiv.innerHTML = '';
+      resultDiv.className = '';
+      render();
+    }
+
+    searchBtn.addEventListener('click', handleSearch);
+    searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') handleSearch(); });
+
+    // チェックボックスのイベントリスナーを追加
+    showExamplesCheckbox.addEventListener('change', render);
+
+    render();
+  </script>
+</body>
+</html>

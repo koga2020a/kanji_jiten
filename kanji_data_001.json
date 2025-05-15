@@ -1,0 +1,38 @@
+[
+  {
+    "explanation": "天から降ってくる水のことです。",
+    "correct": "雨",
+    "readings": ["あめ", "あま", "う"],
+    "options": ["雨", "飴", "天", "雲"],
+    "radical": "雨",
+    "component": "",
+    "example": "きょうは一日中、**アメ**が降っています。"
+  },
+  {
+    "explanation": "砂糖などで作られた甘い食べ物のことです。",
+    "correct": "飴",
+    "readings": ["あめ"],
+    "options": ["飴", "雨", "甘", "雲"],
+    "radical": "食",
+    "component": "雨",
+    "example": "子どもが**アメ**をなめています。"
+  },
+  {
+    "explanation": "夏と冬の間にある、涼しくなる季節のことです。",
+    "correct": "秋",
+    "readings": ["あき", "しゅう"],
+    "options": ["秋", "空", "明", "章"],
+    "radical": "禾",
+    "component": "火",
+    "example": "**アキ**には紅葉がきれいです。"
+  },
+  {
+    "explanation": "中に何もなく、からっぽである様子のことです。",
+    "correct": "空",
+    "readings": ["そら", "から", "くう"],
+    "options": ["空", "秋", "明", "開"],
+    "radical": "穴",
+    "component": "工",
+    "example": "ペットボトルが**カラ**になった。／青い**ソラ**が広がっている。"
+  }
+]
