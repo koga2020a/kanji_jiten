@@ -206,10 +206,12 @@
             if (fileData.some(item => item.correct)) {
               kanjiDatabase = kanjiDatabase.concat(fileData);
             }
+            console.log(`Loaded ${file} with ${fileData.length} items`); // デバッグ用
           } catch (error) {
             console.warn(`${file}の読み込みに失敗しました:`, error);
           }
         }
+        console.log('Total kanji loaded:', kanjiDatabase.length); // デバッグ用
         render();
       } catch (error) {
         console.error('データの読み込みに失敗しました:', error);
@@ -274,7 +276,12 @@
           if (showExamplesCheckbox.checked && item.example) {
             const pExample = document.createElement('p');
             pExample.className = 'example';
-            pExample.innerHTML = formatExample(item.example, item.correct);
+            // militaryExampleがある場合は先に表示
+            if (item.militaryExample && item.militaryExample.trim() !== '') {
+              pExample.innerHTML = `軍事例文: ${formatExample(item.militaryExample, item.correct)}<br>例文: ${formatExample(item.example, item.correct)}`;
+            } else {
+              pExample.innerHTML = `例文: ${formatExample(item.example, item.correct)}`;
+            }
             li.appendChild(pExample);
           }
 
@@ -422,7 +429,7 @@
           example = example.replace(currentKanji.correct, '□');
         }
         // militaryExampleがある場合は先に表示
-        if (currentKanji.militaryExample) {
+        if (currentKanji.militaryExample && currentKanji.militaryExample.trim() !== '') {
           let militaryExample = currentKanji.militaryExample;
           if (militaryExample.includes(currentKanji.correct)) {
             militaryExample = militaryExample.replace(currentKanji.correct, '□');
