@@ -13,18 +13,40 @@
     .input-group button { padding: 8px 16px; border: none; background: #3182ce; color: #fff; border-radius: 0 4px 4px 0; cursor: pointer; }
     .input-group button:hover { background: #2b6cb0; }
     .list { list-style: none; padding: 0; background: #edf2f7; border-radius: 4px; }
-    .list-item { padding: 8px; border-bottom: 1px solid #cbd5e0; cursor: pointer; }
+    .list-item { 
+      padding: 8px; 
+      border-bottom: 1px solid #cbd5e0; 
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .list-item:last-child { border-bottom: none; }
     .list-item:hover { background: #bee3f8; }
     .list-item.selected { background: #90cdf4; }
+    .list-item-content {
+      flex: 1;
+    }
     .info { font-size: 14px; color: #4a5568; margin-top: 4px; }
     .example { font-size: 14px; color: #4a5568; margin-top: 8px; padding: 8px; background: #f7fafc; border-radius: 4px; }
     .example .highlight { font-weight: bold; }
     .example-toggle { margin: 16px 0; }
     .example-toggle label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
-    .options { margin-left: 16px; margin-top: 8px; }
+    .options { 
+      margin-left: 16px;
+      display: flex;
+      gap: 4px;
+    }
     .options p { margin-bottom: 4px; font-weight: bold; }
-    .options button { width: 48px; height: 48px; margin-right: 4px; font-size: 20px; background: #e2e8f0; border: none; border-radius: 4px; cursor: pointer; }
+    .options button { 
+      width: 36px; 
+      height: 36px; 
+      font-size: 16px; 
+      background: #e2e8f0; 
+      border: none; 
+      border-radius: 4px; 
+      cursor: pointer; 
+    }
     .options button:hover { background: #bee3f8; }
     .options button.correct {
       background: #c6f6d5;
@@ -256,6 +278,9 @@
           li.className = 'list-item' + (isSelected ? ' selected' : '');
           li.addEventListener('click', () => selectExplanation(idx));
 
+          const contentDiv = document.createElement('div');
+          contentDiv.className = 'list-item-content';
+
           const pExp = document.createElement('p');
           // explanation_Bを優先的に使用
           let explanation = item.explanation_B || item.explanation;
@@ -265,19 +290,19 @@
           // **で囲まれた部分を強調表示
           explanation = explanation.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
           pExp.innerHTML = explanation;
-          li.appendChild(pExp);
+          contentDiv.appendChild(pExp);
 
           if (item.radical && item.radical !== item.correct) {
             const pRad = document.createElement('p');
             pRad.className = 'info';
             pRad.textContent = '部首: ' + item.radical;
-            li.appendChild(pRad);
+            contentDiv.appendChild(pRad);
           }
           if (item.component && item.component !== item.correct) {
             const pComp = document.createElement('p');
             pComp.className = 'info';
             pComp.textContent = 'つくり/へん: ' + item.component;
-            li.appendChild(pComp);
+            contentDiv.appendChild(pComp);
           }
 
           // 例文の表示
@@ -290,25 +315,28 @@
             } else {
               pExample.innerHTML = `例文: ${formatExample(item.example_B || item.example, item.correct)}`;
             }
-            li.appendChild(pExample);
+            contentDiv.appendChild(pExample);
           }
+
+          li.appendChild(contentDiv);
+
+          // 常に漢字選択ボタンを表示
+          const optDiv = document.createElement('div');
+          optDiv.className = 'options';
+          // 初期表示時のみシャッフル
+          const options = isSelected ? shuffledOptions : item.options;
+          options.forEach(k => {
+            const btn = document.createElement('button');
+            btn.textContent = k;
+            btn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              chooseKanji(k, idx);
+            });
+            optDiv.appendChild(btn);
+          });
+          li.appendChild(optDiv);
 
           ul.appendChild(li);
-
-          if (isSelected) {
-            const optDiv = document.createElement('div');
-            optDiv.className = 'options';
-            const title = document.createElement('p');
-            title.textContent = '漢字を選んでください：';
-            optDiv.appendChild(title);
-            shuffledOptions.forEach(k => {
-              const btn = document.createElement('button');
-              btn.textContent = k;
-              btn.addEventListener('click', () => chooseKanji(k));
-              optDiv.appendChild(btn);
-            });
-            ul.appendChild(optDiv);
-          }
         });
         explanationsDiv.appendChild(ul);
       }
@@ -322,24 +350,23 @@
       selectedIndex = idx;
       resultDiv.innerHTML = '';
       resultDiv.className = '';
+      // 選択時にシャッフル
       shuffledOptions = data[idx] ? shuffle([...data[idx].options]) : [];
       render();
     }
 
-    function chooseKanji(kanji) {
-      if (selectedIndex !== null) {
-        const correctChar = data[selectedIndex].correct;
-        const buttons = document.querySelectorAll('.options button');
-        buttons.forEach(button => {
-          if (button.textContent === kanji) {
-            if (kanji === correctChar) {
-              button.classList.add('correct');
-            } else {
-              button.classList.add('wrong');
-            }
+    function chooseKanji(kanji, itemIndex) {
+      const correctChar = data[itemIndex].correct;
+      const buttons = document.querySelectorAll(`.list-item:nth-child(${itemIndex + 1}) .options button`);
+      buttons.forEach(button => {
+        if (button.textContent === kanji) {
+          if (kanji === correctChar) {
+            button.classList.add('correct');
+          } else {
+            button.classList.add('wrong');
           }
-        });
-      }
+        }
+      });
     }
 
     function handleSearch() {
