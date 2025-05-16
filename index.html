@@ -199,6 +199,20 @@
       margin-top: 20px;
       color: #2d3748;
     }
+    .quiz-toggle {
+      position: absolute;
+      top: 10px;
+      right: 40px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #4a5568;
+      cursor: pointer;
+    }
+    .quiz-toggle input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+    }
   </style>
 </head>
 <body>
@@ -231,6 +245,12 @@
   <div id="quizModal" class="modal">
     <div class="modal-content">
       <span class="close-button">&times;</span>
+      <div class="quiz-toggle">
+        <label>
+          <input type="checkbox" id="autoNextToggle">
+          クリックで次へ
+        </label>
+      </div>
       <div class="quiz-question" id="quizQuestion"></div>
       <div class="quiz-info" id="quizInfo"></div>
       <div class="quiz-options" id="quizOptions"></div>
@@ -246,6 +266,7 @@
     let quizScore = 0;
     let currentQuizIndex = 0;
     let quizQuestions = []; // クイズ用の問題リスト
+    let autoNextMode = false;
 
     const searchInput = document.getElementById('searchInput');
     const searchBtn = document.getElementById('searchBtn');
@@ -260,6 +281,7 @@
     const quizOptions = document.getElementById('quizOptions');
     const quizScoreDiv = document.getElementById('quizScore');
     const closeButton = document.querySelector('.close-button');
+    const autoNextToggle = document.getElementById('autoNextToggle');
 
     // 複数のJSONファイルを読み込む
     async function loadAllKanjiData() {
@@ -509,7 +531,6 @@
       }
 
       const currentKanji = quizQuestions[currentQuizIndex];
-      // 問題文に正解の漢字が含まれる場合は伏字に置換
       let explanation = currentKanji.explanation;
       if (explanation.includes(currentKanji.correct)) {
         explanation = explanation.replace(currentKanji.correct, '□');
@@ -543,12 +564,10 @@
       // 例文の表示
       if (currentKanji.example || currentKanji.example_B) {
         const exampleP = document.createElement('p');
-        // 例文の中の正解の漢字も伏字に置換
         let example = currentKanji.example_B || currentKanji.example;
         if (example.includes(currentKanji.correct)) {
           example = example.replace(currentKanji.correct, '□');
         }
-        // militaryExample_BまたはmilitaryExampleがある場合は先に表示
         if ((currentKanji.militaryExample_B || currentKanji.militaryExample) && (currentKanji.militaryExample_B || currentKanji.militaryExample).trim() !== '') {
           let militaryExample = currentKanji.militaryExample_B || currentKanji.militaryExample;
           if (militaryExample.includes(currentKanji.correct)) {
@@ -561,24 +580,41 @@
         infoDiv.appendChild(exampleP);
       }
       
-      // 既存の情報をクリアして新しい情報を追加
       const existingInfo = quizQuestion.nextElementSibling;
       if (existingInfo && existingInfo.className === 'quiz-info') {
         existingInfo.remove();
       }
       quizQuestion.after(infoDiv);
       
-      // 選択肢をシャッフル
-      const options = shuffle([...currentKanji.options]);
-      quizOptions.innerHTML = '';
-      
-      options.forEach(option => {
-        const button = document.createElement('button');
-        button.className = 'quiz-option';
-        button.textContent = option;
-        button.onclick = () => checkAnswer(option, currentKanji.correct, button);
-        quizOptions.appendChild(button);
-      });
+      // 選択肢を表示（クリックで次へモードの時は非表示）
+      if (!autoNextMode) {
+        const options = shuffle([...currentKanji.options]);
+        quizOptions.innerHTML = '';
+        
+        options.forEach(option => {
+          const button = document.createElement('button');
+          button.className = 'quiz-option';
+          button.textContent = option;
+          button.onclick = () => checkAnswer(option, currentKanji.correct, button);
+          quizOptions.appendChild(button);
+        });
+      } else {
+        quizOptions.innerHTML = '';
+      }
+
+      // クリックで次へ進むモードの場合、モーダル全体にクリックイベントを追加
+      if (autoNextMode) {
+        quizModal.onclick = (e) => {
+          // トグルボタンとそのラベルのクリックは無視
+          if (e.target.closest('.quiz-toggle')) {
+            return;
+          }
+          currentQuizIndex++;
+          showNextQuizQuestion();
+        };
+      } else {
+        quizModal.onclick = null;
+      }
     }
 
     function checkAnswer(selected, correct, button) {
@@ -586,10 +622,12 @@
         button.classList.add('correct');
         quizScore++;
         updateQuizScore();
-        setTimeout(() => {
-          currentQuizIndex++;
-          showNextQuizQuestion();
-        }, 1000);
+        if (!autoNextMode) {
+          setTimeout(() => {
+            currentQuizIndex++;
+            showNextQuizQuestion();
+          }, 1000);
+        }
       }
     }
 
@@ -619,6 +657,12 @@
         selectedIndex = null;
         render();
       }
+    });
+
+    // トグルボタンのイベントリスナー
+    autoNextToggle.addEventListener('change', (e) => {
+      autoNextMode = e.target.checked;
+      showNextQuizQuestion(); // 現在の問題を再表示してモードを反映
     });
 
     render();
