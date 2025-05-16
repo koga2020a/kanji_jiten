@@ -275,6 +275,14 @@
           }
         }
         console.log('Total kanji loaded:', kanjiDatabase.length); // デバッグ用
+
+        // 各アイテムのoptionsをランダムに並べ替え
+        kanjiDatabase.forEach(item => {
+          if (item.options) {
+            item.options = shuffle([...item.options]);
+          }
+        });
+
         render();
       } catch (error) {
         console.error('データの読み込みに失敗しました:', error);
