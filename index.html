@@ -17,10 +17,19 @@
       padding: 8px; 
       border-bottom: 1px solid #cbd5e0; 
       cursor: pointer;
+      background: #2d3748;
+      color: #f7fafc;
+      margin-top: 1px;
     }
     .list-item:last-child { border-bottom: none; }
-    .list-item:hover { background: #bee3f8; }
-    .list-item.selected { background: #90cdf4; }
+    .list-item:hover { 
+      background: #bee3f8;
+      color: #2d3748;
+    }
+    .list-item.selected { 
+      background: #90cdf4;
+      color: #2d3748;
+    }
     .list-item-content {
       display: flex;
       flex-direction: column;
@@ -46,23 +55,29 @@
     }
     .explanation {
       font-size: 16px;
-      color: #2d3748;
+      color: inherit;
       padding-bottom: 4px;
-      border-bottom: 1px solid #e2e8f0;
       margin: 0;
     }
     .info { 
       font-size: 14px; 
-      color: #4a5568; 
+      color: inherit;
       margin: 0;
+    }
+    .info .value {
+      font-weight: bold;
+      color: #2b6cb0;
+      background: #ebf8ff;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 4px;
     }
     .example { 
       font-size: 14px; 
-      color: #4a5568; 
+      color: inherit;
       padding: 8px; 
-      background: #f7fafc; 
+      background: rgba(247, 250, 252, 0.1);
       border-radius: 4px;
-      border-top: 1px solid #e2e8f0;
       margin: 0;
     }
     .example .highlight { font-weight: bold; }
@@ -362,13 +377,13 @@
           if (item.radical && item.radical !== item.correct) {
             const pRad = document.createElement('p');
             pRad.className = 'info';
-            pRad.textContent = '部首: ' + item.radical;
+            pRad.innerHTML = '部首: <span class="value">' + item.radical + '</span>';
             detailsDiv.appendChild(pRad);
           }
           if (item.component && item.component !== item.correct) {
             const pComp = document.createElement('p');
             pComp.className = 'info';
-            pComp.textContent = 'つくり/へん: ' + item.component;
+            pComp.innerHTML = 'つくり/へん: <span class="value">' + item.component + '</span>';
             detailsDiv.appendChild(pComp);
           }
 
@@ -594,6 +609,15 @@
     window.addEventListener('click', (e) => {
       if (e.target === quizModal) {
         endQuiz();
+      }
+    });
+
+    // リスト外クリックで選択解除
+    document.addEventListener('click', (e) => {
+      const listItem = e.target.closest('.list-item');
+      if (!listItem) {
+        selectedIndex = null;
+        render();
       }
     });
 
