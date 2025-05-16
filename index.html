@@ -292,6 +292,13 @@
           pExp.innerHTML = explanation;
           contentDiv.appendChild(pExp);
 
+          // readings（ヨミ）の表示
+          if (item.readings && item.readings.length > 0) {
+            const pRead = document.createElement('p');
+            pRead.className = 'info';
+            pRead.textContent = '読み: ' + item.readings.join('、');
+            contentDiv.appendChild(pRead);
+          }
           if (item.radical && item.radical !== item.correct) {
             const pRad = document.createElement('p');
             pRad.className = 'info';
