@@ -14,7 +14,8 @@
     ],
     "radical": "辶",
     "component": "告",
-    "example": "新しい橋を**ゾウ**造する。"
+    "example": "新しいやりかたを創造する。",
+    "militaryExample": "軍艦を建造する。"
   },
   {
     "explanation": "人や物の形を表す絵や印象のことです。",
@@ -30,7 +31,8 @@
     ],
     "radical": "人",
     "component": "象",
-    "example": "**ゾウ**像を思い浮かべる。"
+    "example": "人物像を思い浮かべる。",
+    "militaryExample": "軍人の像を建てる。"
   },
   {
     "explanation": "数や量が多くなることです。",
@@ -47,7 +49,8 @@
     ],
     "radical": "土",
     "component": "曽",
-    "example": "人口が**ゾウ**加している。"
+    "example": "人口が増加している。",
+    "militaryExample": "軍隊の規模を増強する。"
   },
   {
     "explanation": "きまりや手本のことです。",
@@ -64,7 +67,10 @@
     ],
     "radical": "刀",
     "component": "貝",
-    "example": "ルールを**ソク**守する。"
+    "example": "ルールに則って行動する。",
+    "example_B": "ルールにのっとって行動する。",
+    "militaryExample": "作戦行動規範や規則に従う。",
+    "militaryExample_B": "作戦行動規範や規そくに従う。"
   },
   {
     "explanation": "深さや長さなどを調べることです。",
@@ -81,7 +87,10 @@
     ],
     "radical": "氵",
     "component": "則",
-    "example": "川の深さを**ソク**定する。"
+    "example": "川の深さを測定する。",
+    "example_B": "川の深さをそく定する。",
+    "militaryExample": "敵との距離を計測班に依頼する。",
+    "militaryExample_B": "敵との距離を計そく班に依頼する。"
   },
   {
     "explanation": "ある集団に入っていることです。",
@@ -97,7 +106,8 @@
     ],
     "radical": "尸",
     "component": "豕",
-    "example": "部活動に**ゾク**属する。"
+    "example": "部活に所属する。",
+    "militaryExample": "第三師団に属する兵士。"
   },
   {
     "explanation": "仲間をまとめて引っぱることです。",
@@ -114,7 +124,8 @@
     ],
     "radical": "玄",
     "component": "",
-    "example": "クラスを**ソツ**率する。"
+    "example": "クラスを率する。",
+    "militaryExample": "部隊を率いて前進する。"
   },
   {
     "explanation": "傷つけたり、失ったりすることです。",
@@ -131,7 +142,8 @@
     ],
     "radical": "扌",
     "component": "員",
-    "example": "車が**ソン**傷した。"
+    "example": "車が損傷した。",
+    "militaryExample": "戦闘で装備が損傷した。"
   },
   {
     "explanation": "後ろに下がることです。",
@@ -148,7 +160,8 @@
     ],
     "radical": "辶",
     "component": "艮",
-    "example": "会議を**タイ**席する。"
+    "example": "会議を退席する。",
+    "militaryExample": "軍隊が戦場から退却する。"
   },
   {
     "explanation": "物を一時的に使わせることです。",
@@ -165,7 +178,8 @@
     ],
     "radical": "貝",
     "component": "代",
-    "example": "本を友だちに**タイ**す。"
+    "example": "本を友だちに貸す。",
+    "militaryExample": "同盟国に武器を貸与する。"
   },
   {
     "explanation": "様子や状態のことです。",
@@ -181,7 +195,8 @@
     ],
     "radical": "心",
     "component": "台",
-    "example": "急な**タイ**勢に注意。"
+    "example": "急な態勢に注意。",
+    "militaryExample": "防衛態勢を取る。"
   },
   {
     "explanation": "人やものが集まったかたまりのことです。",
@@ -197,7 +212,8 @@
     ],
     "radical": "囗",
     "component": "寸",
-    "example": "整**ダン**を組む。"
+    "example": "整団を組む。",
+    "militaryExample": "特殊部団を編成する。"
   },
   {
     "explanation": "切り離すことです。",
@@ -214,7 +230,8 @@
     ],
     "radical": "斤",
     "component": "旦",
-    "example": "木を**ダン**断する。"
+    "example": "木を断断する。",
+    "militaryExample": "通信を断絶する。"
   },
   {
     "explanation": "建物を作ることです。",
@@ -231,7 +248,8 @@
     ],
     "radical": "竹",
     "component": "筑",
-    "example": "新しいビルを**チク**造する。"
+    "example": "新しいビルを築造する。",
+    "militaryExample": "要塞を築く。"
   },
   {
     "explanation": "のばすことや張ることです。",
@@ -248,7 +266,8 @@
     ],
     "radical": "弓",
     "component": "長",
-    "example": "ポスターを**チョウ**る。"
+    "example": "ポスターを張る。",
+    "militaryExample": "監視網を張り巡らす。"
   },
   {
     "explanation": "手に持ってさげることです。",
@@ -265,7 +284,8 @@
     ],
     "radical": "扌",
     "component": "是",
-    "example": "バッグを肩に**テイ**げる。"
+    "example": "バッグを肩に提げる。",
+    "militaryExample": "作戦計画を提案する。"
   },
   {
     "explanation": "程度や長さのことです。",
@@ -282,7 +302,8 @@
     ],
     "radical": "禾",
     "component": "呈",
-    "example": "仕事の進**テイ**度を確かめる。"
+    "example": "仕事の進度を確かめる。",
+    "militaryExample": "行軍の程度を確認する。"
   },
   {
     "explanation": "ぴったり合うことです。",
@@ -299,7 +320,8 @@
     ],
     "radical": "辶",
     "component": "啇",
-    "example": "サイズが**テキ**合する。"
+    "example": "サイズが適合する。",
+    "militaryExample": "戦闘に適した訓練。"
   },
   {
     "explanation": "戦う相手のことです。",
@@ -316,7 +338,8 @@
     ],
     "radical": "攴",
     "component": "易",
-    "example": "ライバルを**テキ**視する。"
+    "example": "ライバルを敵視する。",
+    "militaryExample": "敵軍を撃退する。"
   },
   {
     "explanation": "まとめて一つにすることです。",
@@ -333,7 +356,8 @@
     ],
     "radical": "糸",
     "component": "充",
-    "example": "データを**トウ**合する。"
+    "example": "データを統合する。",
+    "militaryExample": "軍隊を統率する。"
   },
   {
     "explanation": "金属の一つで、硬いものです。",
@@ -349,7 +373,8 @@
     ],
     "radical": "金",
     "component": "同",
-    "example": "銅**ドウ**製のベル。"
+    "example": "銅製のベル。",
+    "militaryExample": "銅製の勲章。"
   },
   {
     "explanation": "先に案内することです。",
@@ -366,7 +391,8 @@
     ],
     "radical": "寸",
     "component": "道",
-    "example": "観光客を**ドウ**導する。"
+    "example": "観光客を導導する。",
+    "militaryExample": "新兵を導く。"
   },
   {
     "explanation": "人の良い心のことです。",
@@ -382,7 +408,8 @@
     ],
     "radical": "彳",
     "component": "直",
-    "example": "人徳を**トク**く人。"
+    "example": "人徳を徳く人。",
+    "militaryExample": "将軍の徳を讃える。"
   },
   {
     "explanation": "一人であることです。",
@@ -399,7 +426,8 @@
     ],
     "radical": "犭",
     "component": "蜀",
-    "example": "一人**ドク**り立ち。"
+    "example": "一人独り立ち。",
+    "militaryExample": "独立した軍事組織。"
   },
   {
     "explanation": "仕事をゆだねることです。",
@@ -416,7 +444,8 @@
     ],
     "radical": "人",
     "component": "壬",
-    "example": "部長に**ニン**命する。"
+    "example": "部長に任命する。",
+    "militaryExample": "司令官に任命する。"
   },
   {
     "explanation": "火がついてしだいに燃えることです。",
@@ -433,7 +462,8 @@
     ],
     "radical": "火",
     "component": "然",
-    "example": "薪が**ネン**える。"
+    "example": "薪が燃える。",
+    "militaryExample": "戦車が燃え上がる。"
   },
   {
     "explanation": "できる力のことです。",
@@ -449,7 +479,8 @@
     ],
     "radical": "月",
     "component": "匕",
-    "example": "音楽の**ノウ**力を伸ばす。"
+    "example": "音楽の能力を伸ばす。",
+    "militaryExample": "戦闘能力を高める。"
   },
   {
     "explanation": "こわしたり、切れたりすることです。",
@@ -466,7 +497,8 @@
     ],
     "radical": "石",
     "component": "皮",
-    "example": "紙を**ハ**る。"
+    "example": "紙を破る。",
+    "militaryExample": "敵の防衛線を破る。"
   },
   {
     "explanation": "悪いことをすることです。",
@@ -483,7 +515,8 @@
     ],
     "radical": "犬",
     "component": "氾",
-    "example": "法律を**ハン**す。"
+    "example": "法律を犯す。",
+    "militaryExample": "国境を犯する。"
   },
   {
     "explanation": "区別して決めることです。",
@@ -500,7 +533,8 @@
     ],
     "radical": "刀",
     "component": "半",
-    "example": "勝敗を**ハン**明する。"
+    "example": "勝敗を判明する。",
+    "militaryExample": "軍事作戦の成否を判断する。"
   },
   {
     "explanation": "コピー用の版や、仕事の区切りのことです。",
@@ -516,7 +550,8 @@
     ],
     "radical": "片",
     "component": "反",
-    "example": "印刷**バン**を作る。"
+    "example": "印刷版を作る。",
+    "militaryExample": "作戦版図を作成する。"
   },
   {
     "explanation": "二つを見比べることです。",
@@ -533,7 +568,8 @@
     ],
     "radical": "比",
     "component": "",
-    "example": "成績を**ヒ**べる。"
+    "example": "成績を比べる。",
+    "militaryExample": "戦力を比較する。"
   },
   {
     "explanation": "土が肥えて作物がよく育つことです。",
@@ -550,7 +586,8 @@
     ],
     "radical": "月",
     "component": "巴",
-    "example": "肥**ヒ**料をまく。"
+    "example": "肥料をまく。",
+    "militaryExample": "戦場の土地が血で肥える。"
   },
   {
     "explanation": "よくないことを表す言葉です。",
@@ -566,7 +603,8 @@
     ],
     "radical": "非",
     "component": "",
-    "example": "非**ヒ**常事態。"
+    "example": "非常事態。",
+    "militaryExample": "非武装地帯を設定する。"
   },
   {
     "explanation": "あらかじめ準備することです。",
@@ -583,7 +621,8 @@
     ],
     "radical": "人",
     "component": "畐",
-    "example": "防災**ビ**をする。"
+    "example": "防災備をする。",
+    "militaryExample": "軍事備蓄を強化する。"
   },
   {
     "explanation": "米や麦を入れる袋のことです。",
@@ -600,7 +639,8 @@
     ],
     "radical": "人",
     "component": "票",
-    "example": "米**ヒョウ**俵を運ぶ。"
+    "example": "米俵を運ぶ。",
+    "militaryExample": "砂俵で陣地を築く。"
   },
   {
     "explanation": "人や物のよしあしを考えることです。",
@@ -616,7 +656,8 @@
     ],
     "radical": "言",
     "component": "平",
-    "example": "レビューで**ヒョウ**価する。"
+    "example": "レビューで評価する。",
+    "militaryExample": "作戦を評価する。"
   },
   {
     "explanation": "お金や物がないことです。",
@@ -633,7 +674,8 @@
     ],
     "radical": "貝",
     "component": "分",
-    "example": "貧**ヒン**困を救う。"
+    "example": "貧困を救う。",
+    "militaryExample": "戦時中の貧窮生活。"
   },
   {
     "explanation": "織物や布地のことです。",
@@ -650,7 +692,8 @@
     ],
     "radical": "巾",
     "component": "",
-    "example": "シャツを**ヌノ**で作る。"
+    "example": "シャツを布で作る。",
+    "militaryExample": "迷彩布を使用する。"
   },
   {
     "explanation": "結婚した女性のことです。",
@@ -666,6 +709,7 @@
     ],
     "radical": "女",
     "component": "帚",
-    "example": "主**フ**婦として働く。"
+    "example": "主婦として働く。",
+    "militaryExample": "従軍看護婦として働く。"
   }
 ]

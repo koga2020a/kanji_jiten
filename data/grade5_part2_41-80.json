@@ -13,7 +13,8 @@
     ],
     "radical": "土",
     "component": "",
-    "example": "間隔を**キン**等にそろえる。"
+    "example": "間隔を均等にそろえる。",
+    "militaryExample": "部隊の装備を均一に整える。"
   },
   {
     "explanation": "してはいけないことを決めることです。",
@@ -29,7 +30,8 @@
     ],
     "radical": "示",
     "component": "",
-    "example": "校外に行くのは**キン**じられています。"
+    "example": "校外に行くのは禁じられています。",
+    "militaryExample": "武器の輸出を禁止する。"
   },
   {
     "explanation": "言葉のまとまりのことです。",
@@ -45,7 +47,8 @@
     ],
     "radical": "勹",
     "component": "",
-    "example": "句読点を**ク**で打つ。"
+    "example": "句読点を句で打つ。",
+    "militaryExample": "暗号文の句を解読する。"
   },
   {
     "explanation": "たくさんの人やものが集まっていることです。",
@@ -61,7 +64,8 @@
     ],
     "radical": "羊",
     "component": "",
-    "example": "鳥の**グン**れが空を飛ぶ。"
+    "example": "鳥の群れが空を飛ぶ。",
+    "militaryExample": "敵の群を包囲する。"
   },
   {
     "explanation": "物事の順序や道筋のことです。",
@@ -78,7 +82,8 @@
     ],
     "radical": "糸",
     "component": "",
-    "example": "毎日学校に**ケイ**路をたどる。"
+    "example": "毎日学校に経路をたどる。",
+    "militaryExample": "補給経路を確保する。"
   },
   {
     "explanation": "汚れがなくきれいなことです。",
@@ -94,7 +99,8 @@
     ],
     "radical": "水",
     "component": "",
-    "example": "水が**ケツ**潔に流れる。"
+    "example": "水が潔潔に流れる。",
+    "militaryExample": "潔い戦いを求める。"
   },
   {
     "explanation": "事柄や場合のことです。",
@@ -110,7 +116,8 @@
     ],
     "radical": "亻",
     "component": "",
-    "example": "大切な**ケン**がある。"
+    "example": "大切な件がある。",
+    "militaryExample": "軍事機密の件を扱う。"
   },
   {
     "explanation": "切って使う証書や印のことです。",
@@ -126,7 +133,8 @@
     ],
     "radical": "刀",
     "component": "",
-    "example": "映画の**ケン**を買った。"
+    "example": "映画の券を買った。",
+    "militaryExample": "軍用物資の引換券を発行する。"
   },
   {
     "explanation": "あぶないことや難しいことです。",
@@ -142,7 +150,8 @@
     ],
     "radical": "阝",
     "component": "",
-    "example": "登山はとても**ケン**険だ。"
+    "example": "登山はとても険険だ。",
+    "militaryExample": "険しい山道を進軍する。"
   },
   {
     "explanation": "調べて確かめることです。",
@@ -158,7 +167,8 @@
     ],
     "radical": "木",
     "component": "",
-    "example": "実験を**ケン**査する。"
+    "example": "実験を検査する。",
+    "militaryExample": "武器の検閲を行う。"
   },
   {
     "explanation": "範囲を決めることです。",
@@ -174,7 +184,8 @@
     ],
     "radical": "阝",
     "component": "",
-    "example": "時間に**ゲン**限がある。"
+    "example": "時間に限限がある。",
+    "militaryExample": "戦闘区域を限定する。"
   },
   {
     "explanation": "今のときのことです。",
@@ -190,7 +201,8 @@
     ],
     "radical": "玉",
     "component": "",
-    "example": "**ゲン**在の気温を調べる。"
+    "example": "現在の気温を調べる。",
+    "militaryExample": "現地の戦況を報告する。"
   },
   {
     "explanation": "少なくなることです。",
@@ -206,7 +218,8 @@
     ],
     "radical": "氵",
     "component": "",
-    "example": "砂糖を**ゲン**減して料理する。"
+    "example": "砂糖を減減して料理する。",
+    "militaryExample": "戦力を減らす。"
   },
   {
     "explanation": "古いこと、昔のことです。",
@@ -222,7 +235,8 @@
     ],
     "radical": "攴",
     "component": "",
-    "example": "**コ**故の理由を説明する。"
+    "example": "故故の理由を説明する。",
+    "militaryExample": "故郷の防衛に尽くす。"
   },
   {
     "explanation": "一つひとつのものの数え方です。",
@@ -238,7 +252,8 @@
     ],
     "radical": "亻",
     "component": "",
-    "example": "りんごを**コ**個数える。"
+    "example": "りんごを個数える。",
+    "militaryExample": "個別の戦術を練る。"
   },
   {
     "explanation": "守ることです。",
@@ -254,7 +269,8 @@
     ],
     "radical": "言",
     "component": "",
-    "example": "地球を**ゴ**護する活動。"
+    "example": "地球を護する活動。",
+    "militaryExample": "国境を護衛する。"
   },
   {
     "explanation": "よい結果が出ることです。",
@@ -270,7 +286,8 @@
     ],
     "radical": "攴",
     "component": "",
-    "example": "薬が**コウ**効きました。"
+    "example": "薬が効きました。",
+    "militaryExample": "新兵器の効果を検証する。"
   },
   {
     "explanation": "物の厚みがあることです。",
@@ -287,7 +304,8 @@
     ],
     "radical": "厂",
     "component": "",
-    "example": "本のページが**アツ**厚い。"
+    "example": "本のページが厚い。",
+    "militaryExample": "戦車の装甲は非常に厚い。"
   },
   {
     "explanation": "田んぼをたがやすことです。",
@@ -303,7 +321,8 @@
     ],
     "radical": "耒",
     "component": "",
-    "example": "田んぼを**コウ**耕す。"
+    "example": "田んぼを耕す。",
+    "militaryExample": "軍用地を耕す。"
   },
   {
     "explanation": "鉱物や石のことです。",
@@ -319,7 +338,8 @@
     ],
     "radical": "金",
     "component": "",
-    "example": "**コウ**鉱を採取する。"
+    "example": "鉱を採取する。",
+    "militaryExample": "軍需鉱物を採掘する。"
   },
   {
     "explanation": "組み立てて作ることです。",
@@ -335,7 +355,8 @@
     ],
     "radical": "木",
     "component": "",
-    "example": "建物を**コウ**構造で組み立てる。"
+    "example": "建物を構造で組み立てる。",
+    "militaryExample": "軍事基地を構築する。"
   },
   {
     "explanation": "盛んになることです。",
@@ -352,7 +373,8 @@
     ],
     "radical": "臼",
     "component": "",
-    "example": "新しい習い事に**キョウ**興を持つ。"
+    "example": "新しい習い事に興を持つ。",
+    "militaryExample": "軍事技術に興味を持つ。"
   },
   {
     "explanation": "学ぶために教えることです。",
@@ -368,7 +390,8 @@
     ],
     "radical": "言",
     "component": "",
-    "example": "先生が**コウ**講をする。"
+    "example": "先生が講をする。",
+    "militaryExample": "軍事戦略を講義する。"
   },
   {
     "explanation": "いろいろなものをまぜることです。",
@@ -384,7 +407,8 @@
     ],
     "radical": "氵",
     "component": "",
-    "example": "色水を**コン**混ぜる。"
+    "example": "色水を混ぜる。",
+    "militaryExample": "混乱を防ぐため、部隊を混合せずに配置する。"
   },
   {
     "explanation": "調べることです。",
@@ -400,7 +424,8 @@
     ],
     "radical": "木",
     "component": "",
-    "example": "書類を**サ**査する。"
+    "example": "書類を査する。",
+    "militaryExample": "軍事施設を査察する。"
   },
   {
     "explanation": "もういちどすることです。",
@@ -416,7 +441,8 @@
     ],
     "radical": "冖",
     "component": "",
-    "example": "宿題を**サイ**再提出する。"
+    "example": "宿題を再提出する。",
+    "militaryExample": "部隊を再編成する。"
   },
   {
     "explanation": "自然の力で起こる事故のことです。",
@@ -432,7 +458,8 @@
     ],
     "radical": "火",
     "component": "",
-    "example": "台風の**サイ**災に注意する。"
+    "example": "台風の災に注意する。",
+    "militaryExample": "戦災による被害が広がった。"
   },
   {
     "explanation": "結婚した女性のことです。",
@@ -448,7 +475,8 @@
     ],
     "radical": "女",
     "component": "",
-    "example": "**ツマ**妻と買い物に行く。"
+    "example": "妻と買い物に行く。",
+    "militaryExample": "従軍看護婦は兵士の妻にも寄り添った。"
   },
   {
     "explanation": "取って使うことです。",
@@ -464,7 +492,8 @@
     ],
     "radical": "手",
     "component": "",
-    "example": "花を**サイ**採る。"
+    "example": "花を採る。",
+    "militaryExample": "敵の情報を採取する。"
   },
   {
     "explanation": "できごとが起こるときです。",
@@ -480,7 +509,8 @@
     ],
     "radical": "阝",
     "component": "",
-    "example": "雨**サイ**に気をつける。"
+    "example": "雨際に気をつける。",
+    "militaryExample": "戦闘の際には冷静さが必要だ。"
   },
   {
     "explanation": "あること、存在することです。",
@@ -496,7 +526,8 @@
     ],
     "radical": "土",
     "component": "",
-    "example": "図書館に**ザイ**在する本を探す。"
+    "example": "図書館に在する本を探す。",
+    "militaryExample": "在日米軍が駐留している。"
   },
   {
     "explanation": "お金や物の財産のことです。",
@@ -512,7 +543,8 @@
     ],
     "radical": "貝",
     "component": "",
-    "example": "国の**ザイ**財を管理する。"
+    "example": "国の財を管理する。",
+    "militaryExample": "軍の財源を強化する。"
   },
   {
     "explanation": "してはいけないことをした場合のことです。",
@@ -528,7 +560,8 @@
     ],
     "radical": "罒",
     "component": "",
-    "example": "犯人には重い**ザイ**罪を課す。"
+    "example": "犯人には重い罪を課す。",
+    "militaryExample": "戦争犯罪の罪を問う。"
   },
   {
     "explanation": "いろいろなものがまじっていることです。",
@@ -545,7 +578,8 @@
     ],
     "radical": "隹",
     "component": "",
-    "example": "**ザツ**雑な作業を直す。"
+    "example": "雑な作業を直す。",
+    "militaryExample": "雑兵が集まった部隊。"
   },
   {
     "explanation": "すっぱい味のものです。",
@@ -561,7 +595,8 @@
     ],
     "radical": "酉",
     "component": "",
-    "example": "レモンは**サン**酸っぱい。"
+    "example": "レモンは酸っぱい。",
+    "militaryExample": "酸素マスクを装備する。"
   },
   {
     "explanation": "よいと言うことです。",
@@ -577,7 +612,8 @@
     ],
     "radical": "貝",
     "component": "",
-    "example": "意見に**サン**同する。"
+    "example": "意見に賛同する。",
+    "militaryExample": "同盟に賛成の意を示す。"
   },
   {
     "explanation": "手で支えることです。",
@@ -593,7 +629,8 @@
     ],
     "radical": "支",
     "component": "",
-    "example": "荷物を**シ**支える。"
+    "example": "荷物を支える。",
+    "militaryExample": "支援物資を前線に支給する。"
   },
   {
     "explanation": "心の中に思うことです。",
@@ -609,7 +646,8 @@
     ],
     "radical": "心",
     "component": "",
-    "example": "将来の**シ**志を固める。"
+    "example": "将来の志を固める。",
+    "militaryExample": "将校を志す若者が増えている。"
   },
   {
     "explanation": "木の枝や分かれた部分のことです。",
@@ -625,7 +663,8 @@
     ],
     "radical": "木",
     "component": "",
-    "example": "木の**エダ**枝が折れた。"
+    "example": "木の枝が折れた。",
+    "militaryExample": "作戦が枝分かれした。"
   },
   {
     "explanation": "専門的に教える人のことです。",
@@ -641,6 +680,7 @@
     ],
     "radical": "巾",
     "component": "",
-    "example": "**シ**師の話を聞く。"
+    "example": "師の話を聞く。",
+    "militaryExample": "師団長の命令に従う。"
   }
 ]

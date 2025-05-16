@@ -229,13 +229,14 @@
     function formatExample(example, correct) {
       if (!example) return '';
       
-      // **で囲まれた部分を太字に
-      let formatted = example.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
-      
-      // correctの文字を検索文字に置換
+      // 正解の漢字を伏字に置換
+      let formatted = example;
       if (correct) {
-        formatted = formatted.replace(correct, searchInput.value);
+        formatted = formatted.replace(correct, '□');
       }
+      
+      // **で囲まれた部分を太字に
+      formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
       
       return formatted;
     }
@@ -256,7 +257,14 @@
           li.addEventListener('click', () => selectExplanation(idx));
 
           const pExp = document.createElement('p');
-          pExp.textContent = item.explanation;
+          // explanation_Bを優先的に使用
+          let explanation = item.explanation_B || item.explanation;
+          if (item.correct) {
+            explanation = explanation.replace(item.correct, '□');
+          }
+          // **で囲まれた部分を強調表示
+          explanation = explanation.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
+          pExp.innerHTML = explanation;
           li.appendChild(pExp);
 
           if (item.radical && item.radical !== item.correct) {
@@ -273,14 +281,14 @@
           }
 
           // 例文の表示
-          if (showExamplesCheckbox.checked && item.example) {
+          if (showExamplesCheckbox.checked && (item.example || item.example_B)) {
             const pExample = document.createElement('p');
             pExample.className = 'example';
-            // militaryExampleがある場合は先に表示
-            if (item.militaryExample && item.militaryExample.trim() !== '') {
-              pExample.innerHTML = `軍事例文: ${formatExample(item.militaryExample, item.correct)}<br>例文: ${formatExample(item.example, item.correct)}`;
+            // militaryExample_BまたはmilitaryExampleがある場合は先に表示
+            if ((item.militaryExample_B || item.militaryExample) && (item.militaryExample_B || item.militaryExample).trim() !== '') {
+              pExample.innerHTML = `軍事例文: ${formatExample(item.militaryExample_B || item.militaryExample, item.correct)}<br>例文: ${formatExample(item.example_B || item.example, item.correct)}`;
             } else {
-              pExample.innerHTML = `例文: ${formatExample(item.example, item.correct)}`;
+              pExample.innerHTML = `例文: ${formatExample(item.example_B || item.example, item.correct)}`;
             }
             li.appendChild(pExample);
           }
@@ -324,10 +332,11 @@
         const buttons = document.querySelectorAll('.options button');
         buttons.forEach(button => {
           if (button.textContent === kanji) {
-            button.classList.add(kanji === correctChar ? 'correct' : 'wrong');
-          }
-          if (button.textContent === correctChar) {
-            button.classList.add('correct');
+            if (kanji === correctChar) {
+              button.classList.add('correct');
+            } else {
+              button.classList.add('wrong');
+            }
           }
         });
       }
@@ -421,16 +430,16 @@
       }
       
       // 例文の表示
-      if (currentKanji.example) {
+      if (currentKanji.example || currentKanji.example_B) {
         const exampleP = document.createElement('p');
         // 例文の中の正解の漢字も伏字に置換
-        let example = currentKanji.example;
+        let example = currentKanji.example_B || currentKanji.example;
         if (example.includes(currentKanji.correct)) {
           example = example.replace(currentKanji.correct, '□');
         }
-        // militaryExampleがある場合は先に表示
-        if (currentKanji.militaryExample && currentKanji.militaryExample.trim() !== '') {
-          let militaryExample = currentKanji.militaryExample;
+        // militaryExample_BまたはmilitaryExampleがある場合は先に表示
+        if ((currentKanji.militaryExample_B || currentKanji.militaryExample) && (currentKanji.militaryExample_B || currentKanji.militaryExample).trim() !== '') {
+          let militaryExample = currentKanji.militaryExample_B || currentKanji.militaryExample;
           if (militaryExample.includes(currentKanji.correct)) {
             militaryExample = militaryExample.replace(currentKanji.correct, '□');
           }

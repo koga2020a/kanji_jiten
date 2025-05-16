@@ -1,6 +1,7 @@
 [
   {
     "explanation": "お金や資料のことです。",
+    "explanation_B": "お金や**シ**料のことです。",
     "correct": "資",
     "readings": [
       "し"
@@ -13,7 +14,10 @@
     ],
     "radical": "貝",
     "component": "",
-    "example": "学習に**シ**料を集めた。"
+    "example": "学習に資料を集めた。",
+    "example_B": "学習に**シ**料を集めた。",
+    "militaryExample": "軍事資源を確保する作戦を立てた。",
+    "militaryExample_B": "軍事**シ**源を確保する作戦を立てた。"
   },
   {
     "explanation": "動物を世話して育てることです。",
@@ -30,7 +34,8 @@
     ],
     "radical": "食",
     "component": "",
-    "example": "犬を**か**い始めた。"
+    "example": "犬を飼い始めた。",
+    "militaryExample": "軍用犬を飼育する施設を視察した。"
   },
   {
     "explanation": "人に知らせるために見せることです。",
@@ -47,7 +52,8 @@
     ],
     "radical": "示",
     "component": "",
-    "example": "地図に**しめ**しをつける。"
+    "example": "地図に示しをつける。",
+    "militaryExample": "司令官は作戦図に攻撃ルートを示した。"
   },
   {
     "explanation": "形や様子が同じであることです。",
@@ -64,7 +70,8 @@
     ],
     "radical": "人",
     "component": "",
-    "example": "兄に**に**ていると言われた。"
+    "example": "兄に似ていると言われた。",
+    "militaryExample": "敵の戦術は前回の戦闘に似ている。"
   },
   {
     "explanation": "知ること、わかることです。",
@@ -80,7 +87,8 @@
     ],
     "radical": "言",
     "component": "",
-    "example": "新しい**シキ**を身につける。"
+    "example": "新しい知識を身につける。",
+    "militaryExample": "軍事識別システムで味方機を認識する。"
   },
   {
     "explanation": "ものの品質や値打ちのことです。",
@@ -96,7 +104,8 @@
     ],
     "radical": "貝",
     "component": "",
-    "example": "この商品の**シツ**が高い。"
+    "example": "この商品の質が高い。",
+    "militaryExample": "武器の質が戦闘の結果を左右する。"
   },
   {
     "explanation": "やどや建物のことです。",
@@ -113,7 +122,8 @@
     ],
     "radical": "舌",
     "component": "",
-    "example": "新しい**コウシャ**ができた。"
+    "example": "新しい校舎ができた。",
+    "militaryExample": "兵舎を新たに建設した。"
   },
   {
     "explanation": "わびること、お礼を言うことです。",
@@ -130,7 +140,8 @@
     ],
     "radical": "言",
     "component": "",
-    "example": "お世話になった人に**しゃ**謝する。"
+    "example": "お世話になった人に感謝する。",
+    "militaryExample": "軍事演習による騒音に謝罪した。"
   },
   {
     "explanation": "人に物や知識を与えることです。",
@@ -147,7 +158,8 @@
     ],
     "radical": "扌",
     "component": "",
-    "example": "先生が**ジュ**授を行う。"
+    "example": "先生が授業を行う。",
+    "militaryExample": "将軍は新兵に戦術を授けた。"
   },
   {
     "explanation": "なおしたり、学んだりすることです。",
@@ -164,7 +176,8 @@
     ],
     "radical": "宀",
     "component": "",
-    "example": "自転車を**シュウ**修する。"
+    "example": "自転車を修理する。",
+    "militaryExample": "戦闘機の修理が完了した。"
   },
   {
     "explanation": "思いや考えを言葉にすることです。",
@@ -181,7 +194,8 @@
     ],
     "radical": "辶",
     "component": "",
-    "example": "意見を**の**べる。"
+    "example": "意見を述べる。",
+    "militaryExample": "指揮官は作戦計画を詳細に述べた。"
   },
   {
     "explanation": "技術や方法のことです。",
@@ -198,7 +212,8 @@
     ],
     "radical": "行",
     "component": "",
-    "example": "手**ジュツ**を学ぶ。"
+    "example": "手術を学ぶ。",
+    "militaryExample": "新しい戦闘術を開発した。"
   },
   {
     "explanation": "基準や水準となることです。",
@@ -214,7 +229,8 @@
     ],
     "radical": "水",
     "component": "",
-    "example": "試験の**ジュン**備をする。"
+    "example": "試験の準備をする。",
+    "militaryExample": "軍事演習の準備を整えた。"
   },
   {
     "explanation": "順番に並べることです。",
@@ -230,7 +246,8 @@
     ],
     "radical": "广",
     "component": "",
-    "example": "ファイルを**ジョ**序に整理する。"
+    "example": "ファイルを順序に整理する。",
+    "militaryExample": "軍隊は序列に従って行進した。"
   },
   {
     "explanation": "人を呼び寄せることです。",
@@ -247,7 +264,8 @@
     ],
     "radical": "扌",
     "component": "",
-    "example": "友だちをパーティーに**まね**く。"
+    "example": "友だちをパーティーに招く。",
+    "militaryExample": "外国軍を合同演習に招いた。"
   },
   {
     "explanation": "受けて引き受けることです。",
@@ -264,7 +282,8 @@
     ],
     "radical": "寸",
     "component": "",
-    "example": "部長の依頼を**ショウ**承した。"
+    "example": "部長の依頼を承諾した。",
+    "militaryExample": "司令官は作戦命令を承った。"
   },
   {
     "explanation": "本当であると認めることです。",
@@ -281,7 +300,8 @@
     ],
     "radical": "言",
     "component": "",
-    "example": "努力の証に**ショウ**状をもらった。"
+    "example": "努力の証に証明書をもらった。",
+    "militaryExample": "軍人証明書を提示した。"
   },
   {
     "explanation": "細長いものや条件のことです。",
@@ -298,7 +318,8 @@
     ],
     "radical": "木",
     "component": "",
-    "example": "契約の**ジョウ**項を読む。"
+    "example": "契約の条項を読む。",
+    "militaryExample": "停戦条約の条件を確認した。"
   },
   {
     "explanation": "手紙の書き出しや様子のことです。",
@@ -314,7 +335,8 @@
     ],
     "radical": "犬",
     "component": "",
-    "example": "病状を**ジョウ**報する。"
+    "example": "病状を報告する。",
+    "militaryExample": "戦況を状況報告した。"
   },
   {
     "explanation": "いつもと同じであることです。",
@@ -331,7 +353,8 @@
     ],
     "radical": "巾",
     "component": "",
-    "example": "彼は**ジョウ**に運動をする。"
+    "example": "彼は常に運動をする。",
+    "militaryExample": "部隊は常に警戒態勢を維持する。"
   },
   {
     "explanation": "思いやりの気持ちや心の様子です。",
@@ -348,7 +371,8 @@
     ],
     "radical": "忄",
     "component": "",
-    "example": "人への**ジョウ**思を大切にする。"
+    "example": "人への情思を大切にする。",
+    "militaryExample": "軍事情報を収集した。"
   },
   {
     "explanation": "糸で布を作ることです。",
@@ -365,7 +389,8 @@
     ],
     "radical": "糸",
     "component": "",
-    "example": "機織機で布を**お**る。"
+    "example": "機織機で布を織る。",
+    "militaryExample": "軍服用の生地を織る工場を視察した。"
   },
   {
     "explanation": "仕事や役目のことです。",
@@ -381,7 +406,8 @@
     ],
     "radical": "耳",
     "component": "",
-    "example": "将来の**ショク**業を考える。"
+    "example": "将来の職業を考える。",
+    "militaryExample": "彼は軍の高い職位に就いた。"
   },
   {
     "explanation": "規則や仕組みを作ることです。",
@@ -397,7 +423,8 @@
     ],
     "radical": "刀",
     "component": "",
-    "example": "規則を**セイ**定する。"
+    "example": "規則を制定する。",
+    "militaryExample": "新しい軍制を導入した。"
   },
   {
     "explanation": "人や物の性質や特徴のことです。",
@@ -414,7 +441,8 @@
     ],
     "radical": "忄",
     "component": "",
-    "example": "猫の**セイ**質を調べる。"
+    "example": "猫の性質を調べる。",
+    "militaryExample": "この武器の攻撃性能を評価した。"
   },
   {
     "explanation": "国や社会を治めることです。",
@@ -431,7 +459,8 @@
     ],
     "radical": "攴",
     "component": "",
-    "example": "政府の**セイ**策を学ぶ。"
+    "example": "政府の政策を学ぶ。",
+    "militaryExample": "軍事政権が国を統治した。"
   },
   {
     "explanation": "力や動きの強さのことです。",
@@ -448,7 +477,8 @@
     ],
     "radical": "力",
     "component": "",
-    "example": "風の**セイ**いが強い。"
+    "example": "風の勢いが強い。",
+    "militaryExample": "敵軍の勢いを抑えるため防衛線を強化した。"
   },
   {
     "explanation": "細かくてきれいなことです。",
@@ -464,7 +494,8 @@
     ],
     "radical": "米",
     "component": "",
-    "example": "米を**セイ**米する。"
+    "example": "米を精米する。",
+    "militaryExample": "精鋭部隊を前線に派遣した。"
   },
   {
     "explanation": "物を作ることです。",
@@ -480,7 +511,8 @@
     ],
     "radical": "衣",
     "component": "",
-    "example": "部品を**セイ**造する。"
+    "example": "部品を製造する。",
+    "militaryExample": "国内で武器を製造する計画を立てた。"
   },
   {
     "explanation": "国に納めるお金のことです。",
@@ -496,7 +528,8 @@
     ],
     "radical": "禾",
     "component": "",
-    "example": "消費**ゼイ**を支払う。"
+    "example": "消費税を支払う。",
+    "militaryExample": "軍事費は税金から賄われている。"
   },
   {
     "explanation": "責任を負うことです。",
@@ -512,7 +545,8 @@
     ],
     "radical": "貝",
     "component": "",
-    "example": "仕事の**セキ**任を果たす。"
+    "example": "仕事の責任を果たす。",
+    "militaryExample": "作戦失敗の責任を取って辞任した。"
   },
   {
     "explanation": "成果や働きの跡のことです。",
@@ -528,7 +562,8 @@
     ],
     "radical": "糸",
     "component": "",
-    "example": "学業の**セキ**績を褒められた。"
+    "example": "学業の成績を褒められた。",
+    "militaryExample": "将軍は戦功の功績で勲章を授かった。"
   },
   {
     "explanation": "つなぐことや近づけることです。",
@@ -545,7 +580,8 @@
     ],
     "radical": "手",
     "component": "",
-    "example": "部品を**セツ**接する。"
+    "example": "部品を接続する。",
+    "militaryExample": "敵と接触した部隊から報告があった。"
   },
   {
     "explanation": "施設や仕組みを作ることです。",
@@ -562,7 +598,8 @@
     ],
     "radical": "言",
     "component": "",
-    "example": "新しい図書館を**セツ**立する。"
+    "example": "新しい図書館を設立する。",
+    "militaryExample": "国境に軍事基地を設置した。"
   },
   {
     "explanation": "口の中にある柔らかい部分です。",
@@ -578,7 +615,8 @@
     ],
     "radical": "舌",
     "component": "",
-    "example": "**シタ**を出して冷ます。"
+    "example": "舌を出して冷ます。",
+    "militaryExample": "外国語に舌を滑らせる通訳が軍に必要だった。"
   },
   {
     "explanation": "途切れることや断つことです。",
@@ -595,7 +633,8 @@
     ],
     "radical": "糸",
     "component": "",
-    "example": "連絡が**ゼツ**絶した。"
+    "example": "連絡が絶えた。",
+    "militaryExample": "敵との通信を絶つ作戦を実行した。"
   },
   {
     "explanation": "昔のお金の単位のことです。",
@@ -611,7 +650,8 @@
     ],
     "radical": "金",
     "component": "",
-    "example": "小銭を**ゼニ**で支払う。"
+    "example": "小銭入れで支払う。",
+    "militaryExample": "軍用の銭貨を発行した。"
   },
   {
     "explanation": "先祖や先人のことです。",
@@ -627,7 +667,8 @@
     ],
     "radical": "礻",
     "component": "",
-    "example": "**ソ**祖を敬う。"
+    "example": "先祖を敬う。",
+    "militaryExample": "軍の創設者を祖として記念した。"
   },
   {
     "explanation": "もとのままのことや材料のことです。",
@@ -644,7 +685,8 @@
     ],
     "radical": "糸",
     "component": "",
-    "example": "材料の**ソ**材を使う。"
+    "example": "材料の素材を使う。",
+    "militaryExample": "軍服の素材を耐久性の高いものに変更した。"
   },
   {
     "explanation": "全部まとめることです。",
@@ -661,6 +703,7 @@
     ],
     "radical": "糸",
     "component": "",
-    "example": "データを**ソウ**合して報告する。"
+    "example": "データを総合して報告する。",
+    "militaryExample": "総司令官が全軍に作戦を指示した。"
   }
 ]

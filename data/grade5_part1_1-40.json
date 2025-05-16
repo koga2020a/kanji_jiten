@@ -13,7 +13,8 @@
     ],
     "radical": "土",
     "component": "厂",
-    "example": "気圧が高い日に晴れます。"
+    "example": "気圧が高い日に晴れます。",
+    "militaryExample": "敵軍に圧力をかける。"
   },
   {
     "explanation": "場所や位置を変えることです。",
@@ -30,7 +31,8 @@
     ],
     "radical": "禾",
     "component": "多",
-    "example": "転校して学校を**イ**りました。"
+    "example": "転校して学校を移りました。",
+    "militaryExample": "部隊を前線に移す。"
   },
   {
     "explanation": "物事の原因やもとになるものです。",
@@ -47,7 +49,8 @@
     ],
     "radical": "囗",
     "component": "大",
-    "example": "病気の**イン**を調べる。"
+    "example": "病気の因を調べる。",
+    "militaryExample": "戦争の因を分析する。"
   },
   {
     "explanation": "ずっと続くことや長いことです。",
@@ -64,7 +67,8 @@
     ],
     "radical": "水",
     "component": "水",
-    "example": "友情が**エイ**く続きますように。"
+    "example": "友情が永く続きますように。",
+    "militaryExample": "永久的な平和を願う。"
   },
   {
     "explanation": "仕事を管理したり行ったりすることです。",
@@ -81,7 +85,8 @@
     ],
     "radical": "巛",
     "component": "呂",
-    "example": "旅館を**エイ**しています。"
+    "example": "旅館を営しています。",
+    "militaryExample": "軍事基地を営む。"
   },
   {
     "explanation": "病気や外敵から守ることです。",
@@ -97,7 +102,8 @@
     ],
     "radical": "行",
     "component": "衣",
-    "example": "手を**エイ**生しています。"
+    "example": "手を衛生しています。",
+    "militaryExample": "国境を衛る。"
   },
   {
     "explanation": "かんたんであること、やさしいことです。",
@@ -114,7 +120,8 @@
     ],
     "radical": "日",
     "component": "勿",
-    "example": "この問題は**イキ**です。"
+    "example": "この問題は易です。",
+    "militaryExample": "易攻難守の地形。"
   },
   {
     "explanation": "もうけやプラスになることです。",
@@ -131,7 +138,8 @@
     ],
     "radical": "皿",
     "component": "水",
-    "example": "節約して**エキ**を出す。"
+    "example": "節約して益を出す。",
+    "militaryExample": "戦略的な益を得る。"
   },
   {
     "explanation": "水のようなとろみのあるものです。",
@@ -147,7 +155,8 @@
     ],
     "radical": "水",
     "component": "夜",
-    "example": "実験で液体**エキ**を使う。"
+    "example": "実験で液体液を使う。",
+    "militaryExample": "液体燃料を補給する。"
   },
   {
     "explanation": "見せるために舞台で行うことです。",
@@ -163,7 +172,8 @@
     ],
     "radical": "水",
     "component": "寅",
-    "example": "文化祭で劇を**エン**じる。"
+    "example": "文化祭で劇を演じる。",
+    "militaryExample": "軍事演習を行う。"
   },
   {
     "explanation": "こたえること、返事をすることです。",
@@ -179,7 +189,8 @@
     ],
     "radical": "心",
     "component": "襾",
-    "example": "質問に**オウ**えてください。"
+    "example": "質問に応えてください。",
+    "militaryExample": "敵の攻撃に応戦する。"
   },
   {
     "explanation": "行ったり来たりすることです。",
@@ -195,7 +206,8 @@
     ],
     "radical": "彳",
     "component": "亠",
-    "example": "往復**オウ**切符を買った。"
+    "example": "往復往切符を買った。",
+    "militaryExample": "前線と後方の往復。"
   },
   {
     "explanation": "春に咲く木の花です。",
@@ -211,7 +223,8 @@
     ],
     "radical": "木",
     "component": "甲",
-    "example": "公園に**サクラ**が咲いた。"
+    "example": "公園に桜が咲いた。",
+    "militaryExample": "桜花の部隊章。"
   },
   {
     "explanation": "人から受けた親切や助けの気持ちです。",
@@ -227,7 +240,8 @@
     ],
     "radical": "心",
     "component": "因",
-    "example": "先生の**オン**を忘れません。"
+    "example": "先生の恩を忘れません。",
+    "militaryExample": "戦友の恩に報いる。"
   },
   {
     "explanation": "よいと認めることです。",
@@ -243,7 +257,8 @@
     ],
     "radical": "口",
     "component": "丁",
-    "example": "許可を**カ**ります。"
+    "example": "許可を可ります。",
+    "militaryExample": "作戦の可決を待つ。"
   },
   {
     "explanation": "ほんとうでないが、一時的に使うことです。",
@@ -260,7 +275,8 @@
     ],
     "radical": "人",
     "component": "叚",
-    "example": "仮**カ**宿に泊まる。"
+    "example": "仮宿に泊まる。",
+    "militaryExample": "仮設の軍事基地。"
   },
   {
     "explanation": "ものの値段や値うちのことです。",
@@ -277,7 +293,8 @@
     ],
     "radical": "亻",
     "component": "兌",
-    "example": "図書の**カ**値を調べる。"
+    "example": "図書の価値を調べる。",
+    "militaryExample": "戦略的価値を評価する。"
   },
   {
     "explanation": "大きな川のことです。",
@@ -294,7 +311,8 @@
     ],
     "radical": "氵",
     "component": "可",
-    "example": "川の**カ**口で遊ぶ。"
+    "example": "川の河口で遊ぶ。",
+    "militaryExample": "河川を防衛線とする。"
   },
   {
     "explanation": "すぎること、行きすぎることです。",
@@ -311,7 +329,8 @@
     ],
     "radical": "辶",
     "component": "瓜",
-    "example": "電車を**カ**ぎてしまった。"
+    "example": "電車を過ぎてしまった。",
+    "militaryExample": "過剰な軍事力。"
   },
   {
     "explanation": "気持ちがよいこと、さわやかなことです。",
@@ -328,7 +347,8 @@
     ],
     "radical": "忄",
     "component": "夬",
-    "example": "快適な部屋で過ごす。"
+    "example": "快適な部屋で過ごす。",
+    "militaryExample": "快進撃を続ける。"
   },
   {
     "explanation": "お祝いをすることです。",
@@ -344,7 +364,8 @@
     ],
     "radical": "貝",
     "component": "加",
-    "example": "新年の賀詞を書く。"
+    "example": "新年の賀詞を書く。",
+    "militaryExample": "戦勝を賀する。"
   },
   {
     "explanation": "わかること、ばらばらに分けることです。",
@@ -361,7 +382,8 @@
     ],
     "radical": "角",
     "component": "刀",
-    "example": "問題を**カイ**説する。"
+    "example": "問題を解説する。",
+    "militaryExample": "敵の暗号を解読する。"
   },
   {
     "explanation": "形やきまり、身分のことです。",
@@ -377,7 +399,8 @@
     ],
     "radical": "木",
     "component": "各",
-    "example": "入力**カク**をチェック。"
+    "example": "入力格をチェック。",
+    "militaryExample": "格闘訓練を行う。"
   },
   {
     "explanation": "間違いないこと、はっきりしていることです。",
@@ -394,7 +417,8 @@
     ],
     "radical": "石",
     "component": "隹",
-    "example": "情報が**カク**かを確かめる。"
+    "example": "情報が確かを確かめる。",
+    "militaryExample": "確実な情報を得る。"
   },
   {
     "explanation": "ひたい、またはお金の量のことです。",
@@ -411,7 +435,8 @@
     ],
     "radical": "頁",
     "component": "客",
-    "example": "入場**ガク**を支払う。"
+    "example": "入場額を支払う。",
+    "militaryExample": "軍事予算の額を決定する。"
   },
   {
     "explanation": "書物を出版することです。",
@@ -427,7 +452,8 @@
     ],
     "radical": "刀",
     "component": "刊",
-    "example": "新聞を**カン**行する。"
+    "example": "新聞を刊行する。",
+    "militaryExample": "軍事雑誌を刊行する。"
   },
   {
     "explanation": "木の太い中心の部分、または仕事の中心です。",
@@ -444,7 +470,8 @@
     ],
     "radical": "木",
     "component": "干",
-    "example": "木の**ミキ**を調べる。"
+    "example": "木の幹を調べる。",
+    "militaryExample": "幹部将校の会議。"
   },
   {
     "explanation": "くり返しして身につけることです。",
@@ -461,7 +488,8 @@
     ],
     "radical": "忄",
     "component": "貫",
-    "example": "新しい仕事に**ナ**れる。"
+    "example": "新しい仕事に慣れる。",
+    "militaryExample": "戦闘に慣れる。"
   },
   {
     "explanation": "目、見るはたらきです。",
@@ -478,7 +506,8 @@
     ],
     "radical": "目",
     "component": "艮",
-    "example": "医者が**ガン**科の目を見る。"
+    "example": "医者が眼科の目を見る。",
+    "militaryExample": "敵の動きを眼で追う。"
   },
   {
     "explanation": "ものごとの土台やもとになることです。",
@@ -495,7 +524,8 @@
     ],
     "radical": "土",
     "component": "其",
-    "example": "学習の**キ**礎を作る。"
+    "example": "学習の基礎を作る。",
+    "militaryExample": "軍事基地を建設する。"
   },
   {
     "explanation": "近づくこと、よせることです。",
@@ -512,7 +542,8 @@
     ],
     "radical": "宀",
     "component": "奇",
-    "example": "駅に**ヨ**り道をする。"
+    "example": "駅に寄り道をする。",
+    "militaryExample": "敵陣に寄せ集める。"
   },
   {
     "explanation": "きまり、ルールのことです。",
@@ -528,7 +559,8 @@
     ],
     "radical": "見",
     "component": "氏",
-    "example": "校則**キ**則を守る。"
+    "example": "校則規則を守る。",
+    "militaryExample": "軍規を遵守する。"
   },
   {
     "explanation": "わざ、手の動きを使う力です。",
@@ -545,7 +577,8 @@
     ],
     "radical": "扌",
     "component": "支",
-    "example": "演技の**ギ**を練習する。"
+    "example": "演技の技を練習する。",
+    "militaryExample": "戦闘技術を磨く。"
   },
   {
     "explanation": "正しいこと、道理のことです。",
@@ -561,7 +594,8 @@
     ],
     "radical": "羊",
     "component": "我",
-    "example": "正義の**ギ**を考える。"
+    "example": "正義の義を考える。",
+    "militaryExample": "義勇軍に参加する。"
   },
   {
     "explanation": "さかさまになること、反対のことです。",
@@ -578,7 +612,8 @@
     ],
     "radical": "辶",
     "component": "匕",
-    "example": "逆**ギャク**の方法を試す。"
+    "example": "逆の方法を試す。",
+    "militaryExample": "逆襲を開始する。"
   },
   {
     "explanation": "長い時間続くことです。",
@@ -595,7 +630,8 @@
     ],
     "radical": "久",
     "component": "丿",
-    "example": "久しぶりに会う。"
+    "example": "久しぶりに会う。",
+    "militaryExample": "久しい戦いの歴史。"
   },
   {
     "explanation": "古い、昔からあることです。",
@@ -612,7 +648,8 @@
     ],
     "radical": "日",
     "component": "臼",
-    "example": "旧友と話す。"
+    "example": "旧友と話す。",
+    "militaryExample": "旧式の兵器。"
   },
   {
     "explanation": "その場所にいることです。",
@@ -629,7 +666,8 @@
     ],
     "radical": "尸",
     "component": "古",
-    "example": "家に**イ**ます。"
+    "example": "家に居ます。",
+    "militaryExample": "陣地に居る。"
   },
   {
     "explanation": "ゆるすこと、認めることです。",
@@ -646,7 +684,8 @@
     ],
     "radical": "言",
     "component": "午",
-    "example": "許可を**キョ**す。"
+    "example": "許可を許す。",
+    "militaryExample": "軍事行動を許可する。"
   },
   {
     "explanation": "へだたり、場所の区切りのことです。",
@@ -663,6 +702,7 @@
     ],
     "radical": "土",
     "component": "竟",
-    "example": "国**キョウ**線を越える。"
+    "example": "国境線を越える。",
+    "militaryExample": "軍事境界線を設定する。"
   }
 ]
