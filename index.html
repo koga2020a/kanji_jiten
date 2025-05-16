@@ -17,24 +17,52 @@
       padding: 8px; 
       border-bottom: 1px solid #cbd5e0; 
       cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
     }
     .list-item:last-child { border-bottom: none; }
     .list-item:hover { background: #bee3f8; }
     .list-item.selected { background: #90cdf4; }
     .list-item-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .list-item-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .list-item-info {
       flex: 1;
     }
-    .info { font-size: 14px; color: #4a5568; margin-top: 4px; }
-    .example { font-size: 14px; color: #4a5568; margin-top: 8px; padding: 8px; background: #f7fafc; border-radius: 4px; }
+    .list-item-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .explanation {
+      font-size: 16px;
+      color: #2d3748;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .info { font-size: 14px; color: #4a5568; }
+    .example { 
+      font-size: 14px; 
+      color: #4a5568; 
+      padding: 8px; 
+      background: #f7fafc; 
+      border-radius: 4px;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 8px;
+    }
     .example .highlight { font-weight: bold; }
     .example-toggle { margin: 16px 0; }
     .example-toggle label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
     .options { 
       margin-left: 16px;
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 4px;
     }
     .options p { margin-bottom: 4px; font-weight: bold; }
@@ -49,8 +77,12 @@
     }
     .options button:hover { background: #bee3f8; }
     .options button.correct {
-      background: #c6f6d5;
-      color: #2f855a;
+      background: #48bb78;
+      color: white;
+      font-weight: bold;
+      transform: scale(1.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
     }
     .options button.wrong {
       background: #fed7d7;
@@ -281,56 +313,54 @@
           const contentDiv = document.createElement('div');
           contentDiv.className = 'list-item-content';
 
+          // 説明文（最上段）
           const pExp = document.createElement('p');
-          // explanation_Bを優先的に使用
+          pExp.className = 'explanation';
           let explanation = item.explanation_B || item.explanation;
           if (item.correct) {
             explanation = explanation.replace(item.correct, '□');
           }
-          // **で囲まれた部分を強調表示
           explanation = explanation.replace(/\*\*(.*?)\*\*/g, '<span class="highlight">$1</span>');
           pExp.innerHTML = explanation;
           contentDiv.appendChild(pExp);
 
-          // readings（ヨミ）の表示
+          // メインコンテンツ（詳細情報と漢字選択）
+          const mainDiv = document.createElement('div');
+          mainDiv.className = 'list-item-main';
+
+          // 左側の情報
+          const infoDiv = document.createElement('div');
+          infoDiv.className = 'list-item-info';
+
+          // 詳細情報（読み、部首、つくり/へん）
+          const detailsDiv = document.createElement('div');
+          detailsDiv.className = 'list-item-details';
+
           if (item.readings && item.readings.length > 0) {
             const pRead = document.createElement('p');
             pRead.className = 'info';
             pRead.textContent = '読み: ' + item.readings.join('、');
-            contentDiv.appendChild(pRead);
+            detailsDiv.appendChild(pRead);
           }
           if (item.radical && item.radical !== item.correct) {
             const pRad = document.createElement('p');
             pRad.className = 'info';
             pRad.textContent = '部首: ' + item.radical;
-            contentDiv.appendChild(pRad);
+            detailsDiv.appendChild(pRad);
           }
           if (item.component && item.component !== item.correct) {
             const pComp = document.createElement('p');
             pComp.className = 'info';
             pComp.textContent = 'つくり/へん: ' + item.component;
-            contentDiv.appendChild(pComp);
+            detailsDiv.appendChild(pComp);
           }
 
-          // 例文の表示
-          if (showExamplesCheckbox.checked && (item.example || item.example_B)) {
-            const pExample = document.createElement('p');
-            pExample.className = 'example';
-            // militaryExample_BまたはmilitaryExampleがある場合は先に表示
-            if ((item.militaryExample_B || item.militaryExample) && (item.militaryExample_B || item.militaryExample).trim() !== '') {
-              pExample.innerHTML = `軍事例文: ${formatExample(item.militaryExample_B || item.militaryExample, item.correct)}<br>例文: ${formatExample(item.example_B || item.example, item.correct)}`;
-            } else {
-              pExample.innerHTML = `例文: ${formatExample(item.example_B || item.example, item.correct)}`;
-            }
-            contentDiv.appendChild(pExample);
-          }
+          infoDiv.appendChild(detailsDiv);
+          mainDiv.appendChild(infoDiv);
 
-          li.appendChild(contentDiv);
-
-          // 常に漢字選択ボタンを表示
+          // 漢字選択ボタン
           const optDiv = document.createElement('div');
           optDiv.className = 'options';
-          // 初期表示時のみシャッフル
           const options = isSelected ? shuffledOptions : item.options;
           options.forEach(k => {
             const btn = document.createElement('button');
@@ -341,8 +371,23 @@
             });
             optDiv.appendChild(btn);
           });
-          li.appendChild(optDiv);
+          mainDiv.appendChild(optDiv);
 
+          contentDiv.appendChild(mainDiv);
+
+          // 例文
+          if (showExamplesCheckbox.checked && (item.example || item.example_B)) {
+            const pExample = document.createElement('p');
+            pExample.className = 'example';
+            if ((item.militaryExample_B || item.militaryExample) && (item.militaryExample_B || item.militaryExample).trim() !== '') {
+              pExample.innerHTML = `軍事例文: ${formatExample(item.militaryExample_B || item.militaryExample, item.correct)}<br>例文: ${formatExample(item.example_B || item.example, item.correct)}`;
+            } else {
+              pExample.innerHTML = `例文: ${formatExample(item.example_B || item.example, item.correct)}`;
+            }
+            contentDiv.appendChild(pExample);
+          }
+
+          li.appendChild(contentDiv);
           ul.appendChild(li);
         });
         explanationsDiv.appendChild(ul);
