@@ -1,0 +1,23 @@
+01ea2cb	01ea2cb5131c03bac8ad17d8401c638fc9c9d9fa	2025-05-17 15:02:44 +0900	mod クイズ	origin/main
+9aed509	9aed509daed99389ac6ebfaadef5b9613ce8b2ad	2025-05-17 14:28:46 +0900	mod クイズ	origin/main
+1c8a207	1c8a2079f5bb6047708e926a7c340e7a8d8efc0a	2025-05-17 03:22:08 +0900	mod readme.md	origin/main
+99c8c18	99c8c18b97fbeaaca1a004b0522b77243a405e60	2025-05-16 23:04:54 +0900	mod クイズ	origin/main
+9c03584	9c03584e6e35ed68bcdd0ba344b2dc02d8628321	2025-05-16 22:21:05 +0900	mod クイズで次へモード追加	origin/main
+bf92a84	bf92a84649e0c5af285b1155a00cf68c001519a2	2025-05-16 22:16:57 +0900	mod レイアウト	origin/main
+8dcb00d	8dcb00d05120715d5ffa813fe2fc1dfbdf5520cc	2025-05-16 21:49:48 +0900	漢字の初期表示時のランダム表示をjsonレベルにして	origin/main
+9e85c29	9e85c297c4ce0a56a39d3fd098f80e0d6c6b1188	2025-05-16 21:44:01 +0900	mod レイアウト	origin/main
+ce81be5	ce81be52da5c27034cc0b9b5a03fde6da9541ef2	2025-05-16 21:41:00 +0900	mod レイアウト	origin/main
+4845c19	4845c19a3d79f5d54f17ec44d9820c2b4066b8dc	2025-05-16 21:26:22 +0900	mod ヨミ追加	origin/main
+3d7d7cb	3d7d7cb6db664981957004cf72dee276c9f49c8b	2025-05-16 20:25:15 +0900	mod 配置	origin/main
+adce400	adce4006d3e162c411c31e998e93247908019311	2025-05-16 20:18:52 +0900	mod 漢字選択の色	origin/main
+8d991fc	8d991fce3521ea64bf78e7e3eb342d66ee36d917	2025-05-16 02:05:09 +0900	軍事例追加、対応	origin/main
+64b93a6	64b93a6521811c8e2987a6c0287bfcd68ee37d9b	2025-05-16 02:02:43 +0900	軍事例追加、対応	origin/main
+bc3dede	bc3dede45d8466dcded727b091e3b0e9d5661b21	2025-05-16 01:46:56 +0900	用例追加	origin/main
+09b2d8c	09b2d8cf0667f826ed62020b92a58c8a36ee3865	2025-05-16 01:15:15 +0900	mod readme.md	origin/main
+39cb097	39cb0975bd7dde2fcf904932882e784272fcfee9	2025-05-16 01:13:45 +0900	検索のひらがな・カタカナの別をなくした	origin/main
+d7f63e4	d7f63e49f716664ad75eb70fa26c8545931c2ad4	2025-05-16 01:07:34 +0900	first	origin/main
+
+git log --all --pretty=format:"%h|%H|%ad|%s" --date=iso | while IFS="|" read -r short_hash full_hash date msg; do
+  branches=$(git branch -r --contains "$full_hash" | sed 's/^[ *]*//' | tr '\n' ';' | sed 's/;$//')
+  printf "%s\t%s\t%s\t%s\t%s\n" "$short_hash" "$full_hash" "$date" "$msg" "$branches"
+done > git_commit_report.tsv
