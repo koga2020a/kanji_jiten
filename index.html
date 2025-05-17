@@ -147,6 +147,9 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      min-height: 480px;
+      display: flex;
+      flex-direction: column;
     }
     .close-button {
       position: absolute;
@@ -168,6 +171,7 @@
       padding: 10px;
       background: #f7fafc;
       border-radius: 4px;
+      min-height: 150px;
     }
     .quiz-info p {
       margin: 5px 0;
@@ -182,9 +186,9 @@
     }
     .quiz-options {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
       gap: 10px;
-      margin: 20px 0;
+      margin: 0;
     }
     .quiz-option {
       padding: 15px;
@@ -204,7 +208,8 @@
     .quiz-score {
       text-align: center;
       font-size: 18px;
-      margin-top: 20px;
+      margin-top: auto;
+      padding: 10px 0;
       color: #2d3748;
     }
     .quiz-toggle {
@@ -253,6 +258,29 @@
       color: white;
     }
     .answer-button:hover {
+      opacity: 0.9;
+    }
+    .quiz-answer-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .quiz-answer-button {
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      color: white;
+    }
+    .quiz-answer-button.correct {
+      background: #48bb78;
+    }
+    .quiz-answer-button.next {
+      background: #4299e1;
+    }
+    .quiz-answer-button:hover {
       opacity: 0.9;
     }
   </style>
@@ -657,6 +685,36 @@
           answerDiv.className = 'quiz-answer';
           answerDiv.textContent = `正解: ${currentKanji.correct}`;
           quizOptions.appendChild(answerDiv);
+
+          // 右側にボタンを配置
+          const answerButtonsDiv = document.createElement('div');
+          answerButtonsDiv.className = 'quiz-answer-buttons';
+
+          const correctButton = document.createElement('button');
+          correctButton.className = 'quiz-answer-button correct';
+          correctButton.textContent = '正解した';
+          correctButton.onclick = (e) => {
+            e.stopPropagation();
+            quizScore++;
+            updateQuizScore();
+            showAnswer = false;
+            currentQuizIndex++;
+            showNextQuizQuestion();
+          };
+
+          const nextButton = document.createElement('button');
+          nextButton.className = 'quiz-answer-button next';
+          nextButton.textContent = '次へ';
+          nextButton.onclick = (e) => {
+            e.stopPropagation();
+            showAnswer = false;
+            currentQuizIndex++;
+            showNextQuizQuestion();
+          };
+
+          answerButtonsDiv.appendChild(correctButton);
+          answerButtonsDiv.appendChild(nextButton);
+          quizOptions.appendChild(answerButtonsDiv);
         }
       }
 
@@ -664,7 +722,7 @@
       if (autoNextMode) {
         quizModal.onclick = (e) => {
           // トグルボタンとそのラベルのクリックは無視
-          if (e.target.closest('.quiz-toggle')) {
+          if (e.target.closest('.quiz-toggle') || e.target.closest('.quiz-answer-buttons')) {
             return;
           }
           if (!showAnswer) {
