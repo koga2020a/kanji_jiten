@@ -309,6 +309,10 @@
         <input type="checkbox" id="showExamples" checked>
         例文を表示する
       </label>
+      <label>
+        <input type="checkbox" id="showKanji" checked>
+        漢字を表示する
+      </label>
       <button id="quizBtn" class="quiz-button">クイズ</button>
     </div>
     <div id="explanations"></div>
@@ -357,6 +361,7 @@
     const resultDiv = document.getElementById('result');
     const guideDiv = document.getElementById('guide');
     const showExamplesCheckbox = document.getElementById('showExamples');
+    const showKanjiCheckbox = document.getElementById('showKanji');
     const quizBtn = document.getElementById('quizBtn');
     const quizModal = document.getElementById('quizModal');
     const quizQuestion = document.getElementById('quizQuestion');
@@ -501,7 +506,12 @@
           const options = isSelected ? shuffledOptions : item.options;
           options.forEach(k => {
             const btn = document.createElement('button');
-            btn.textContent = k;
+            if (showKanjiCheckbox.checked) {
+              btn.textContent = k;
+            } else {
+              btn.textContent = '□';
+              btn.setAttribute('data-kanji', k);
+            }
             btn.addEventListener('click', (e) => {
               e.stopPropagation();
               chooseKanji(k, idx);
@@ -548,11 +558,18 @@
       const correctChar = data[itemIndex].correct;
       const buttons = document.querySelectorAll(`.list-item:nth-child(${itemIndex + 1}) .options button`);
       buttons.forEach(button => {
-        if (button.textContent === kanji) {
+        const buttonKanji = button.getAttribute('data-kanji') || button.textContent;
+        if (buttonKanji === kanji) {
           if (kanji === correctChar) {
             button.classList.add('correct');
+            if (!showKanjiCheckbox.checked) {
+              button.textContent = kanji;
+            }
           } else {
             button.classList.add('wrong');
+            if (!showKanjiCheckbox.checked) {
+              button.textContent = kanji;
+            }
           }
         }
       });
@@ -592,6 +609,7 @@
 
     // チェックボックスのイベントリスナーを追加
     showExamplesCheckbox.addEventListener('change', render);
+    showKanjiCheckbox.addEventListener('change', render);
 
     // クイズ機能の実装
     function startQuiz() {
